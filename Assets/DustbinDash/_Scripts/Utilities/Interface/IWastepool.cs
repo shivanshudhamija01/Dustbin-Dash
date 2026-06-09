@@ -4,15 +4,12 @@
 /// </summary>
 public interface IWastePool
 {
-    /// <summary>Borrow a ready-to-use WasteItem.</summary>
     WasteItem Get();
 
-    /// <summary>Return a used WasteItem so it can be reused later.</summary>
     void Return(WasteItem item);
 
-    /// <summary>Return every currently active item at once (e.g. on Game Over).</summary>
     void ReturnAll();
-
-    int ActiveCount { get; }
-    int TotalCount { get; }
 }
+
+// In waste pool , what i will be doing is that , instead of creating or passing the reference of all these things, it is fine to 
+// have the singleton class , and use that , 

@@ -19,6 +19,9 @@ public class WasteSpawner : MonoBehaviour
     [SerializeField] private float spawnXMin = -4f;
     [SerializeField] private float spawnXMax = 4f;
     [SerializeField] private float spawnY = 5.5f;   // just above top of camera
+    [SerializeField] private RectTransform spawnArea;
+    // Instead of here passing the spawnY, i will pass the transform or the rect transform , 
+    // Then the final spawn position will be calculated from the transform.position +- spawnXMin/Max
 
     [Header("Base Interval (seconds between spawns)")]
     [SerializeField] private float baseInterval = 1.8f;
@@ -48,7 +51,7 @@ public class WasteSpawner : MonoBehaviour
     private int _level = 1;
     private bool _spawning = false;
     private Coroutine _spawnRoutine;
-    private IWastePool _pool;
+    // private WastePool _pool;
 
     // ── Lifecycle ─────────────────────────────────────────────────────────────
 
@@ -62,7 +65,7 @@ public class WasteSpawner : MonoBehaviour
     // ── Public API ────────────────────────────────────────────────────────────
     private void Awake()
     {
-        _pool = poolReference;   // WastePool implements IWastePool, so this cast is valid
+        // _pool = poolReference;   // WastePool implements IWastePool, so this cast is valid
     }
     void Start()
     {
@@ -110,18 +113,21 @@ public class WasteSpawner : MonoBehaviour
 
     private void SpawnOne()
     {
-        // 1. Borrow from pool ---------------------------------------------------
-        Debug.Log("Item is not null ji");
-        WasteItem item = _pool.Get();
-        if (item == null) return;   // pool denied (growth disabled + pool empty)
+        // // 1. Borrow from pool ---------------------------------------------------
+        GameObject wasteObj = WastePool.Instance.GetItem();
+        if (wasteObj == null) return;
+
+        WasteItem item = wasteObj.GetComponent<WasteItem>();
+        if (item == null) return;  // pool denied (growth disabled + pool empty)
 
         // 2. Pick a random waste type ------------------------------------------
         WasteData data = PickRandomType();
-        item.ApplyData(data);
+        // item.ApplyData(data);
 
         // 3. Position just above the screen ------------------------------------
-        float spawnX = Random.Range(spawnXMin, spawnXMax);
-        item.transform.position = new Vector3(spawnX, spawnY, 0f);
+        Vector3 spawnPos = GetSpawnPosition();
+
+        item.transform.position = spawnPos;
         item.transform.rotation = Quaternion.identity;
 
         // 4. Calculate velocity ------------------------------------------------
@@ -136,11 +142,10 @@ public class WasteSpawner : MonoBehaviour
         item.Launch(velocity, spin);
 
         // Debug log (disable in release builds)
-#if UNITY_EDITOR
-        Debug.Log($"[WasteSpawner] Spawned '{data.displayName}' at x={spawnX:F2}  " +
-                  $"vy={-fallSpeed:F2}  vx={drift:F2}  spin={spin:F0}°/s  " +
-                  $"pool active={_pool.ActiveCount}");
-#endif
+        // #if UNITY_EDITOR
+        //         Debug.Log($"[WasteSpawner] Spawned '{data.displayName}' at x={spawnX:F2}  " +
+        //                   $"vy={-fallSpeed:F2}  vx={drift:F2}  spin={spin:F0}°/s  ");
+        // #endif
     }
 
     // ── Calculation helpers ───────────────────────────────────────────────────
@@ -162,10 +167,7 @@ public class WasteSpawner : MonoBehaviour
     /// </summary>
     private float CalculateFallSpeed(WasteData data)
     {
-        float speed = baseSpeed
-                    + (_level - 1) * speedPerLevel
-                    + data.speedBonus
-                    + Random.Range(0f, speedJitter);
+        float speed = baseSpeed + (_level - 1) * speedPerLevel + data.speedBonus + Random.Range(0f, speedJitter);
         return Mathf.Max(0.5f, speed);
     }
 
@@ -187,5 +189,16 @@ public class WasteSpawner : MonoBehaviour
             return null;
         }
         return wasteTypes[Random.Range(0, wasteTypes.Length)];
+    }
+    private Vector3 GetSpawnPosition()
+    {
+        Vector3[] corners = new Vector3[4];
+        spawnArea.GetWorldCorners(corners);
+
+        return new Vector3(
+            Random.Range(corners[0].x, corners[3].x),
+            spawnArea.position.y,
+            0f
+        );
     }
 }

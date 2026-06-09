@@ -8,62 +8,63 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class WasteItem : MonoBehaviour
 {
-    // ── Runtime data (set externally) ────────────────────────────────────────
+    // ── Runtime data ──────────────────────────────────────────────────────────
 
     [HideInInspector] public WasteData Data;
 
-    [Header("Cull Y — item is returned to pool below this world-Y")]
-    [SerializeField] private float cullY = -6f;
+    // ── Private refs ──────────────────────────────────────────────────────────
 
-    // ── Private refs ─────────────────────────────────────────────────────────
-
-    private IWastePool _pool;   // <-- interface, not WastePool
+    private IWastePool _pool;
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
 
-    // ── Events ───────────────────────────────────────────────────────────────
+    // ── Events ────────────────────────────────────────────────────────────────
 
     public static event System.Action<WasteItem> OnMissed;
     public static event System.Action<WasteItem> OnCaught;
 
-    // ── Lifecycle ────────────────────────────────────────────────────────────
+    // ── Lifecycle ─────────────────────────────────────────────────────────────
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
+
         _rb.gravityScale = 0f;
-        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        // FIX 1: Remove FreezeRotation — this was blocking angularVelocity entirely.
+        // FIX 2: Only freeze X and Y position constraints, never rotation.
+        _rb.constraints = RigidbodyConstraints2D.None;
     }
 
     private void OnEnable()
     {
+        // FIX 3: Reset velocity here is fine ONLY because OnEnable fires
+        // before Launch() is called by the spawner. But to be safe, we reset
+        // both linear and angular so the item is clean when borrowed from pool.
         _rb.linearVelocity = Vector2.zero;
         _rb.angularVelocity = 0f;
     }
 
-    private void Update()
-    {
-        if (transform.position.y < cullY)
-        {
-            OnMissed?.Invoke(this);
-            ReturnToPool();
-        }
-    }
+    // ── Public API ────────────────────────────────────────────────────────────
 
-    // ── Public API ───────────────────────────────────────────────────────────
-
-    /// <summary>
-    /// Called once by WastePool right after instantiation.
-    /// Stores the pool reference as IWastePool — no concrete type needed.
-    /// </summary>
     public void Init(IWastePool pool)
     {
         _pool = pool;
     }
 
+    /// <summary>
+    /// Apply velocity and spin.
+    /// velocity.x = horizontal drift (left or right)
+    /// velocity.y = fall speed (always negative, downward)
+    /// angularVelocityDeg = degrees/sec spin
+    /// </summary>
     public void Launch(Vector2 velocity, float angularVelocityDeg)
     {
+        // FIX 4: Force constraints to None right before applying velocity —
+        // guarantees no stale constraint blocks movement on re-use from pool.
+        _rb.constraints = RigidbodyConstraints2D.None;
+
         _rb.linearVelocity = velocity;
         _rb.angularVelocity = angularVelocityDeg;
     }
@@ -81,18 +82,27 @@ public class WasteItem : MonoBehaviour
         ReturnToPool();
     }
 
-    // ── Private helpers ──────────────────────────────────────────────────────
+    // ── Private ───────────────────────────────────────────────────────────────
 
     private void ReturnToPool()
     {
-        _pool?.Return(this);
+        WastePool.Instance.ReturnItem(this.gameObject);
     }
 
-    // ── Collision ────────────────────────────────────────────────────────────
+    private void Drop()
+    {
+        OnMissed?.Invoke(this);
+        ReturnToPool();
+    }
+
+    // ── Collision ─────────────────────────────────────────────────────────────
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("BinOpening"))
             Catch();
+
+        if (other.CompareTag("Ground"))
+            Drop();
     }
 }
