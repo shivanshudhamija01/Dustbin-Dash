@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6850575692630194350}
   - component: {fileID: 3916225900649089986}
   - component: {fileID: 7679188736188645388}
+  - component: {fileID: -3416105694985241073}
   m_Layer: 5
   m_Name: BrokenBottle
   m_TagString: Untagged
@@ -114,8 +115,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f7bdd7e3d249b6a5efdd2181eea0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WasteItem
-  Data: {fileID: 0}
-  cullY: -6
+  config: {fileID: 11400000, guid: fc3365aa2380e4160bc44795c9c5e63a, type: 2}
+--- !u!114 &-3416105694985241073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775261559041880916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac86cf9dbef24760ada7b59dafae1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDetector
 --- !u!1 &5784763622162828172
 GameObject:
   m_ObjectHideFlags: 0

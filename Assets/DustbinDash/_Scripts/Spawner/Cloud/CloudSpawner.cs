@@ -94,16 +94,9 @@ public class CloudSpawner : MonoBehaviour
         currentClouds++;
         cloud.gameObject.SetActive(true);
         CloudController controller = cloud.GetComponent<CloudController>();
-        // cloud.GetComponent<CloudController>()
-        //     .Initialize(
-        //         targetPoint.position,
-        //         speed,
-        //         CloudPool.Instance,
-        //         this,
-        //         selectedLane);
+
         if (controller != null)
         {
-            Debug.Log("Controller is not null");
             controller.Initialize(targetPoint.position, speed, CloudPool.Instance, this, selectedLane);
         }
     }

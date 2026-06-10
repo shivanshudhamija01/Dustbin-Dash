@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 2918621925845505210}
   - component: {fileID: 8738321697652869666}
   - component: {fileID: 8190032690543466525}
+  - component: {fileID: 1695144240369688716}
   m_Layer: 5
   m_Name: Paper
   m_TagString: Untagged
@@ -189,5 +190,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f7bdd7e3d249b6a5efdd2181eea0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WasteItem
-  Data: {fileID: 0}
-  cullY: -6
+  config: {fileID: 11400000, guid: a9094e20893214bcebfae1fe5b1438f4, type: 2}
+--- !u!114 &1695144240369688716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360594178640598155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac86cf9dbef24760ada7b59dafae1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDetector

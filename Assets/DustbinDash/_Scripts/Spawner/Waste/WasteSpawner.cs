@@ -7,34 +7,26 @@ using UnityEngine;
 /// </summary>
 public class WasteSpawner : MonoBehaviour
 {
-    // ── Inspector ─────────────────────────────────────────────────────────────
-
     [Header("References")]
-    [SerializeField] private WastePool poolReference;
-
-    [Tooltip("All possible waste types. One is chosen randomly each spawn.")]
-    [SerializeField] private WasteData[] wasteTypes;
-
-    [Header("Spawn Bounds (world space X)")]
-    [SerializeField] private float spawnXMin = -4f;
-    [SerializeField] private float spawnXMax = 4f;
-    [SerializeField] private float spawnY = 5.5f;   // just above top of camera
+    [SerializeField] private MonoBehaviour providerSource;
     [SerializeField] private RectTransform spawnArea;
-    // Instead of here passing the spawnY, i will pass the transform or the rect transform , 
-    // Then the final spawn position will be calculated from the transform.position +- spawnXMin/Max
+
 
     [Header("Base Interval (seconds between spawns)")]
     [SerializeField] private float baseInterval = 1.8f;
     [SerializeField] private float intervalJitter = 0.5f;   // ± random added to each interval
+
 
     [Header("Fall Speed")]
     [SerializeField] private float baseSpeed = 2.5f;
     [SerializeField] private float speedPerLevel = 0.4f;
     [SerializeField] private float speedJitter = 0.6f;   // random extra speed per item
 
+
     [Header("Horizontal Drift")]
     [SerializeField] private float baseDrift = 0.6f;   // max |vx| at level 1
     [SerializeField] private float driftPerLevel = 0.08f;
+
 
     [Header("Rotation")]
     [SerializeField] private float maxAngularSpeed = 120f;   // degrees/sec
@@ -51,21 +43,10 @@ public class WasteSpawner : MonoBehaviour
     private int _level = 1;
     private bool _spawning = false;
     private Coroutine _spawnRoutine;
-    // private WastePool _pool;
-
-    // ── Lifecycle ─────────────────────────────────────────────────────────────
-
-    private void OnValidate()
-    {
-        // Sanity-check bounds in the inspector.
-        if (spawnXMin >= spawnXMax)
-            Debug.LogWarning("[WasteSpawner] spawnXMin must be less than spawnXMax.");
-    }
-
-    // ── Public API ────────────────────────────────────────────────────────────
+    private IWasteProvider provider;
     private void Awake()
     {
-        // _pool = poolReference;   // WastePool implements IWastePool, so this cast is valid
+        provider = providerSource as IWasteProvider;
     }
     void Start()
     {
@@ -113,16 +94,11 @@ public class WasteSpawner : MonoBehaviour
 
     private void SpawnOne()
     {
-        // // 1. Borrow from pool ---------------------------------------------------
-        GameObject wasteObj = WastePool.Instance.GetItem();
-        if (wasteObj == null) return;
-
-        WasteItem item = wasteObj.GetComponent<WasteItem>();
-        if (item == null) return;  // pool denied (growth disabled + pool empty)
+        WasteItem item = provider.GetWaste();
+        if (item == null) return;
 
         // 2. Pick a random waste type ------------------------------------------
-        WasteData data = PickRandomType();
-        // item.ApplyData(data);
+        WasteData data = item.GetConfig();
 
         // 3. Position just above the screen ------------------------------------
         Vector3 spawnPos = GetSpawnPosition();
@@ -141,19 +117,8 @@ public class WasteSpawner : MonoBehaviour
         // 6. Launch ------------------------------------------------------------
         item.Launch(velocity, spin);
 
-        // Debug log (disable in release builds)
-        // #if UNITY_EDITOR
-        //         Debug.Log($"[WasteSpawner] Spawned '{data.displayName}' at x={spawnX:F2}  " +
-        //                   $"vy={-fallSpeed:F2}  vx={drift:F2}  spin={spin:F0}°/s  ");
-        // #endif
     }
 
-    // ── Calculation helpers ───────────────────────────────────────────────────
-
-    /// <summary>
-    /// Interval between spawns. Shrinks every level, floored at minInterval.
-    /// A random jitter is added so spawns never feel mechanical.
-    /// </summary>
     private float CalculateInterval()
     {
         float interval = baseInterval - (_level - 1) * intervalReduction;
@@ -167,7 +132,7 @@ public class WasteSpawner : MonoBehaviour
     /// </summary>
     private float CalculateFallSpeed(WasteData data)
     {
-        float speed = baseSpeed + (_level - 1) * speedPerLevel + data.speedBonus + Random.Range(0f, speedJitter);
+        float speed = (baseSpeed + (_level - 1) * speedPerLevel + Random.Range(0f, speedJitter)) * data.speedMultiplier;
         return Mathf.Max(0.5f, speed);
     }
 
@@ -176,20 +141,10 @@ public class WasteSpawner : MonoBehaviour
     /// </summary>
     private float CalculateDrift(WasteData data)
     {
-        float maxDrift = baseDrift + (_level - 1) * driftPerLevel + data.driftBonus;
+        float maxDrift = (baseDrift + (_level - 1) * driftPerLevel) * data.driftMultiplier;
         return Random.Range(-maxDrift, maxDrift);
     }
 
-    /// <summary>Pick a WasteData uniformly at random.</summary>
-    private WasteData PickRandomType()
-    {
-        if (wasteTypes == null || wasteTypes.Length == 0)
-        {
-            Debug.LogError("[WasteSpawner] No waste types assigned!");
-            return null;
-        }
-        return wasteTypes[Random.Range(0, wasteTypes.Length)];
-    }
     private Vector3 GetSpawnPosition()
     {
         Vector3[] corners = new Vector3[4];

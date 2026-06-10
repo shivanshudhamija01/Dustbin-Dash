@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1958986835822669279}
   - component: {fileID: 5417195282126137630}
   - component: {fileID: 3496092292961108016}
+  - component: {fileID: -4046141739170403494}
   m_Layer: 5
   m_Name: Can 2
   m_TagString: Untagged
@@ -114,8 +115,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f7bdd7e3d249b6a5efdd2181eea0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WasteItem
-  Data: {fileID: 0}
-  cullY: -6
+  config: {fileID: 11400000, guid: 87186bc8edbac4eb6bdf950acc0855e6, type: 2}
+--- !u!114 &-4046141739170403494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891036068391366265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac86cf9dbef24760ada7b59dafae1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDetector
 --- !u!1 &8148624004029151614
 GameObject:
   m_ObjectHideFlags: 0

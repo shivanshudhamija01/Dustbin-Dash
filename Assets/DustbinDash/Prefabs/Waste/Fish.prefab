@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 3766683079758703314}
   - component: {fileID: 4190822498998547503}
   - component: {fileID: 8847785223302937401}
+  - component: {fileID: 7175363643780612674}
   m_Layer: 5
   m_Name: Fish
   m_TagString: Untagged
@@ -189,5 +190,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f7bdd7e3d249b6a5efdd2181eea0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WasteItem
-  Data: {fileID: 0}
-  cullY: -6
+  config: {fileID: 11400000, guid: 9b8aff94b0289457da057b45357c22d0, type: 2}
+--- !u!114 &7175363643780612674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2567097774311603315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac86cf9dbef24760ada7b59dafae1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDetector

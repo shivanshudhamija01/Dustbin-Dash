@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 2a27b6dc2a2244c90984871d7047d4f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8759698979235801267
+    second: Slice 56_0
+  - first:
+      213: 3023971708701781753
+    second: Slice 56_1
+  - first:
+      213: -1292848649864677484
+    second: Slice 56_2
+  - first:
+      213: 1264441888184937382
+    second: Slice 56_3
+  - first:
+      213: 2732326460912436678
+    second: Slice 56_4
+  - first:
+      213: 5917097979471896802
+    second: Slice 56_5
+  - first:
+      213: -6623585317825152918
+    second: Slice 56_6
+  - first:
+      213: -718304158235226933
+    second: Slice 56_7
+  - first:
+      213: -8709706397179705338
+    second: Slice 56_8
+  - first:
+      213: 7175775715050780291
+    second: Slice 56_9
+  - first:
+      213: 3966869649860007515
+    second: Slice 56_10
+  - first:
+      213: -8438492789866000102
+    second: Slice 56_11
+  - first:
+      213: -8161792724307902830
+    second: Slice 56_12
+  - first:
+      213: 3240207176940764443
+    second: Slice 56_13
+  - first:
+      213: 7333278536042432192
+    second: Slice 56_14
+  - first:
+      213: -1729524391102576325
+    second: Slice 56_15
+  - first:
+      213: -5262456340060838287
+    second: Slice 56_16
+  - first:
+      213: 1977782034232418523
+    second: Slice 56_17
+  - first:
+      213: 3887725641054052889
+    second: Slice 56_18
+  - first:
+      213: 3151908880268530182
+    second: Slice 56_19
+  - first:
+      213: 4810546817078383071
+    second: Slice 56_20
+  - first:
+      213: 612334807571892294
+    second: Slice 56_21
+  - first:
+      213: -5447954618171146192
+    second: Slice 56_22
+  - first:
+      213: -7781529092940674456
+    second: Slice 56_23
+  - first:
+      213: -5994476784902041844
+    second: Slice 56_24
+  - first:
+      213: 6107931999864879639
+    second: Slice 56_25
+  - first:
+      213: -998324997499387573
+    second: Slice 56_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slice 56_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 130
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8a3bc8fc3b09970800000000000000
+      internalID: 8759698979235801267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 63
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe20045f3e47f920800000000000000
+      internalID: 3023971708701781753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497f874b001ee0ee0800000000000000
+      internalID: -1292848649864677484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 63
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab2360b2333c8110800000000000000
+      internalID: 1264441888184937382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 63
+        width: 58
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c50611907c2be520800000000000000
+      internalID: 2732326460912436678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 63
+        width: 53
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0aa9f1341cd1250800000000000000
+      internalID: 5917097979471896802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 63
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68f9872f3c4414a0800000000000000
+      internalID: -6623585317825152918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 130
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc04bf7c221806f0800000000000000
+      internalID: -718304158235226933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 104
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60808228d28e02780800000000000000
+      internalID: -8709706397179705338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_9
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 104
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386f9737ef9759360800000000000000
+      internalID: 7175775715050780291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 67
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b561f2edde62d0730800000000000000
+      internalID: 3966869649860007515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_11
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 66
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a119754448374ea80800000000000000
+      internalID: -8438492789866000102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 17
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e7241a2cc7bbe80800000000000000
+      internalID: -8161792724307902830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1db934924787fc20800000000000000
+      internalID: 3240207176940764443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 17
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c64ec3a9f905c560800000000000000
+      internalID: 7333278536042432192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 17
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3905fdcabe7ff7e0800000000000000
+      internalID: -1729524391102576325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_16
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 17
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176eba427dff7f6b0800000000000000
+      internalID: -5262456340060838287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 17
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0a299084e727b10800000000000000
+      internalID: 1977782034232418523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 17
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912643b5fd9f3f530800000000000000
+      internalID: 3887725641054052889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_19
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6021ec45d64ddbb20800000000000000
+      internalID: 3151908880268530182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 17
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1d75fb7de72c240800000000000000
+      internalID: 4810546817078383071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 17
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6480ee063437f7800800000000000000
+      internalID: 612334807571892294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 17
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030c577a32af464b0800000000000000
+      internalID: -5447954618171146192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 17
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a47eda484720490800000000000000
+      internalID: -7781529092940674456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 17
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f869dcf175fcca0800000000000000
+      internalID: -5994476784902041844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_25
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 17
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71aff2ceacbb3c450800000000000000
+      internalID: 6107931999864879639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slice 56_26
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 17
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4108a144bc3522f0800000000000000
+      internalID: -998324997499387573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Slice 56_0: 8759698979235801267
+      Slice 56_1: 3023971708701781753
+      Slice 56_10: 3966869649860007515
+      Slice 56_11: -8438492789866000102
+      Slice 56_12: -8161792724307902830
+      Slice 56_13: 3240207176940764443
+      Slice 56_14: 7333278536042432192
+      Slice 56_15: -1729524391102576325
+      Slice 56_16: -5262456340060838287
+      Slice 56_17: 1977782034232418523
+      Slice 56_18: 3887725641054052889
+      Slice 56_19: 3151908880268530182
+      Slice 56_2: -1292848649864677484
+      Slice 56_20: 4810546817078383071
+      Slice 56_21: 612334807571892294
+      Slice 56_22: -5447954618171146192
+      Slice 56_23: -7781529092940674456
+      Slice 56_24: -5994476784902041844
+      Slice 56_25: 6107931999864879639
+      Slice 56_26: -998324997499387573
+      Slice 56_3: 1264441888184937382
+      Slice 56_4: 2732326460912436678
+      Slice 56_5: 5917097979471896802
+      Slice 56_6: -6623585317825152918
+      Slice 56_7: -718304158235226933
+      Slice 56_8: -8709706397179705338
+      Slice 56_9: 7175775715050780291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
