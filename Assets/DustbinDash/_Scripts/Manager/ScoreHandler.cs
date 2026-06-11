@@ -33,14 +33,15 @@ public class ScoreHandler : MonoBehaviour
 
     private void HandleCatch(Events.OnWasteCaught evt)
     {
-        int points =
-            evt.Waste.GetScore() * Level;
+        // Here i will set that , so that may be if different waste is having different score
+        int points = evt.Waste.GetScore() * Level;
 
         Score += points;
 
-        EventBus.Publish(
-            new Events.OnScoreAdded(points));
+        // This event will be listened by the gameplay panel to update the score
+        EventBus.Publish(new Events.OnScoreAdded(Score));
 
+        Debug.Log("Score is : " + Score);
         CheckLevelUp();
     }
 
@@ -56,8 +57,7 @@ public class ScoreHandler : MonoBehaviour
 
         nextLevelThreshold += pointsPerLevel;
 
-        EventBus.Publish(
-            new Events.OnLevelChanged(Level));
+        EventBus.Publish(new Events.OnLevelChanged(Level));
     }
 
     private void HandleRestart(Events.OnGameRestarted evt)
@@ -71,8 +71,8 @@ public class ScoreHandler : MonoBehaviour
         Level = 1;
         nextLevelThreshold = pointsPerLevel;
 
-        EventBus.Publish(
-            new Events.OnLevelChanged(Level));
+        // This event will be listened by the spawner as well as to the ui manager, 
+        EventBus.Publish(new Events.OnLevelChanged(Level));
     }
 
     public void SaveHighScore()

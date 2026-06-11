@@ -27,13 +27,12 @@ public class LivesHandler : MonoBehaviour
     {
         Lives = Mathf.Max(0, Lives - 1);
 
-        EventBus.Publish(
-            new Events.OnLivesChanged(Lives));
+        // here it will listened in the gameplay panel , to update the lives count
+        EventBus.Publish(new Events.OnLivesChanged(Lives));
 
         if (Lives <= 0)
         {
-            EventBus.Publish(
-                new Events.OnGameOver());
+            EventBus.Publish(new Events.OnGameOver());
         }
     }
 
@@ -41,7 +40,6 @@ public class LivesHandler : MonoBehaviour
     {
         Lives = startingLives;
 
-        EventBus.Publish(
-            new Events.OnLivesChanged(Lives));
+        EventBus.Publish(new Events.OnLivesChanged(Lives));
     }
 }

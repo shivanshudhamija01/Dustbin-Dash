@@ -72,15 +72,15 @@ public class GameManager : MonoBehaviour
 
     private void HandleLevelChanged(Events.OnLevelChanged evt)
     {
-        spawner.SetLevel(evt.Level);
+        // spawner.SetLevel(evt.Level);
     }
 
-    private void Update()
-    {
-        if (State == GameState.GameOver &&
-            Input.GetKeyDown(KeyCode.Space))
-        {
-            RestartGame();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (State == GameState.GameOver &&
+    //         Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         RestartGame();
+    //     }
+    // }
 }

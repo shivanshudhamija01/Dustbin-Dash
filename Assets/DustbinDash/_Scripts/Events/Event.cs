@@ -1,5 +1,10 @@
 public class Events
 {
+    public readonly struct OnGameStarted { }
+    public readonly struct OnGameRestarted { }
+    public readonly struct OnGameOver { }
+    public readonly struct OnGamePaused { }
+    public readonly struct OnGameResumed { }
     public readonly struct OnWasteCaught
     {
         public readonly WasteItem Waste;
@@ -28,40 +33,36 @@ public class Events
             Waste = waste;
         }
     }
-    public readonly struct OnGameRestarted
+    public struct OnScoreAdded
     {
-
-    }
-    public readonly struct OnScoreAdded
-    {
-        public readonly int points;
-        public OnScoreAdded(int points)
+        public int Score;
+        public OnScoreAdded(int score)
         {
-            this.points = points;
+            Score = score;
         }
     }
-    public readonly struct OnLevelChanged
+    public struct OnLevelChanged
     {
-        public readonly int Level;
+        public int Level;
         public OnLevelChanged(int level)
         {
-            this.Level = level;
+            Level = level;
         }
     }
-    public readonly struct OnLivesChanged
+    public struct OnLivesChanged
     {
-        public readonly int lives;
+        public int Lives;
         public OnLivesChanged(int lives)
         {
-            this.lives = lives;
+            Lives = lives;
         }
     }
-    public readonly struct OnGameOver
+    public struct OnGameInput
     {
-
-    }
-    public readonly struct OnGameStarted
-    {
-
+        public int Direction;
+        public OnGameInput(int direction)
+        {
+            Direction = direction;
+        }
     }
 }

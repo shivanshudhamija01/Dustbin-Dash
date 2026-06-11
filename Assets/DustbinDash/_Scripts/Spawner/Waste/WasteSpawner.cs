@@ -71,11 +71,21 @@ public class WasteSpawner : MonoBehaviour
             _spawnRoutine = null;
         }
     }
-
-    /// <summary>Increase difficulty by one level.</summary>
-    public void SetLevel(int level)
+    void OnEnable()
     {
+        EventBus.Subscribe<Events.OnLevelChanged>(SetLevel);
+    }
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<Events.OnLevelChanged>(SetLevel);
+    }
+    /// <summary>Increase difficulty by one level.</summary>
+    /// I have to invoke this method on score update after particular range
+    public void SetLevel(Events.OnLevelChanged evt)
+    {
+        int level = evt.Level;
         _level = Mathf.Max(1, level);
+        Debug.Log("Level changed he he : " + level);
     }
 
     // ── Core spawn loop ───────────────────────────────────────────────────────
@@ -112,6 +122,7 @@ public class WasteSpawner : MonoBehaviour
         Vector2 velocity = new Vector2(drift, -fallSpeed);
 
         // 5. Random spin -------------------------------------------------------
+        // May be here i can also add multipler like i did in speed and all that things from the wastedata
         float spin = Random.Range(-maxAngularSpeed, maxAngularSpeed);
 
         // 6. Launch ------------------------------------------------------------
@@ -133,6 +144,7 @@ public class WasteSpawner : MonoBehaviour
     private float CalculateFallSpeed(WasteData data)
     {
         float speed = (baseSpeed + (_level - 1) * speedPerLevel + Random.Range(0f, speedJitter)) * data.speedMultiplier;
+        Debug.Log("Level is this : " + _level + " " + "speed is : " + speed);
         return Mathf.Max(0.5f, speed);
     }
 
