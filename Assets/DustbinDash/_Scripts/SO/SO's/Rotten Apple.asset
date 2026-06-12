@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a448f2c781a43bca08e94c9a3eda8b, type: 3}
   m_Name: Rotten Apple
   m_EditorClassIdentifier: Assembly-CSharp::WasteData
-  sprite: {fileID: 21300000, guid: 3f7c7bce30471422aaea3fce93dff360, type: 3}
-  displayName: Rotten Apple
   baseScore: 10
-  speedBonus: 0
-  driftBonus: 0
+  speedMultiplier: 1.25
+  driftMultiplier: 1
+  angularVelocityMultiplier: 1
+  bounceFromWalls: 1
+  bounceStrength: 1.5

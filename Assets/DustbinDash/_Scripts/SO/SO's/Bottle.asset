@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a448f2c781a43bca08e94c9a3eda8b, type: 3}
   m_Name: Bottle
   m_EditorClassIdentifier: Assembly-CSharp::WasteData
-  sprite: {fileID: 21300000, guid: e5e5954903ae2416ab12dade274a03cd, type: 3}
-  displayName: Bottle
   baseScore: 10
-  speedBonus: 0
-  driftBonus: 0
+  speedMultiplier: 1
+  driftMultiplier: 2
+  angularVelocityMultiplier: 1.5
+  bounceFromWalls: 1
+  bounceStrength: 2

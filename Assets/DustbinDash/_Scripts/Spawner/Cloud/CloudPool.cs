@@ -11,13 +11,12 @@ public class CloudPool : MonoBehaviour
     [Header("Pool Settings")]
     [SerializeField] private int poolSizePerCloud = 5;
 
-    private List<GameObject> pooledClouds =
-        new List<GameObject>();
+    private readonly List<GameObject> availableClouds = new();
+    private readonly List<GameObject> activeClouds = new();
 
     private void Awake()
     {
         Instance = this;
-
         CreatePool();
     }
 
@@ -32,46 +31,45 @@ public class CloudPool : MonoBehaviour
 
                 cloud.SetActive(false);
 
-                pooledClouds.Add(cloud);
+                availableClouds.Add(cloud);
             }
         }
     }
 
     public GameObject GetCloud()
     {
-        List<GameObject> inactiveClouds =
-            new List<GameObject>();
-
-        foreach (GameObject cloud in pooledClouds)
-        {
-            if (!cloud.activeInHierarchy)
-            {
-                inactiveClouds.Add(cloud);
-            }
-        }
-
-        if (inactiveClouds.Count == 0)
+        if (availableClouds.Count == 0)
             return null;
 
         int randomIndex =
-            Random.Range(0, inactiveClouds.Count);
+            Random.Range(0, availableClouds.Count);
 
-        return inactiveClouds[randomIndex];
+        GameObject cloud = availableClouds[randomIndex];
+
+        availableClouds.RemoveAt(randomIndex);
+        activeClouds.Add(cloud);
+
+        return cloud;
     }
 
     public void ReturnCloud(GameObject cloud)
     {
+        if (cloud == null)
+            return;
+
+        activeClouds.Remove(cloud);
+
+        cloud.transform.SetParent(transform);
         cloud.SetActive(false);
+
+        availableClouds.Add(cloud);
     }
 
     public void ReturnAll()
     {
-        foreach (GameObject cloud in pooledClouds)
+        while (activeClouds.Count > 0)
         {
-            if (cloud.activeInHierarchy)
-            {
-                cloud.SetActive(false);
-            }
+            ReturnCloud(activeClouds[0]);
         }
     }
 }

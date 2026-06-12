@@ -15,10 +15,12 @@ public class GamePausePanel : MonoBehaviour
     }
     private void OnResumeButtonClicked()
     {
+        Time.timeScale = 1f;
         EventBus.Publish(new Events.OnGameResumed());
     }
     private void OnRestartButtonClicked()
     {
+        Time.timeScale = 1f;
         EventBus.Publish(new Events.OnGameRestarted());
     }
     private void OnQuitButtonClicked()

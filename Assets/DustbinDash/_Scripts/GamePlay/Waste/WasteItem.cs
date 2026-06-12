@@ -20,6 +20,11 @@ public class WasteItem : MonoBehaviour
         // I will remove these reference from here 
         _rb.linearVelocity = Vector2.zero;
         _rb.angularVelocity = 0f;
+        EventBus.Subscribe<Events.OnWasteWallHit>(OnWallHit);
+    }
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<Events.OnWasteWallHit>(OnWallHit);
     }
     public void Launch(Vector2 velocity, float angularVelocityDeg)
     {
@@ -38,9 +43,9 @@ public class WasteItem : MonoBehaviour
     {
         return config.baseScore;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnWallHit(Events.OnWasteWallHit evt)
     {
-        if (!collision.collider.CompareTag("Wall"))
+        if (evt.Waste != this)
             return;
 
         if (!config.bounceFromWalls)
@@ -51,5 +56,6 @@ public class WasteItem : MonoBehaviour
         velocity.x *= -config.bounceStrength;
 
         _rb.linearVelocity = velocity;
+
     }
 }

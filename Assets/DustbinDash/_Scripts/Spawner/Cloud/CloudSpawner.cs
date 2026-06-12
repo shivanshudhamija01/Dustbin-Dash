@@ -24,14 +24,84 @@ public class CloudSpawner : MonoBehaviour
 
     private int currentClouds;
 
-    private void Start()
+    private bool spawning;
+    private Coroutine spawnRoutine;
+
+    private void OnEnable()
     {
-        StartCoroutine(SpawnRoutine());
+        EventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
+        EventBus.Subscribe<Events.OnGameRestarted>(RestartSpawner);
+        EventBus.Subscribe<Events.OnGameOver>(GameOver);
     }
+
+    private void OnDisable()
+    {
+        EventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
+        EventBus.Unsubscribe<Events.OnGameRestarted>(RestartSpawner);
+        EventBus.Unsubscribe<Events.OnGameOver>(GameOver);
+    }
+
+
+    public void StartSpawning()
+    {
+        StopSpawning();
+
+        spawning = true;
+        spawnRoutine = StartCoroutine(SpawnRoutine());
+    }
+
+    public void StopSpawning()
+    {
+        spawning = false;
+
+        if (spawnRoutine != null)
+        {
+            StopCoroutine(spawnRoutine);
+            spawnRoutine = null;
+        }
+    }
+
+    public void ResetSpawner()
+    {
+        StopSpawning();
+
+        currentClouds = 0;
+
+        foreach (CloudLane lane in lanes)
+        {
+            lane.currentClouds = 0;
+        }
+
+        CloudPool.Instance.ReturnAll();
+    }
+
+    // =====================================================
+    // Event Handlers
+    // =====================================================
+
+    private void StartSpawner(Events.OnGameStarted evt)
+    {
+        StartSpawning();
+    }
+
+    private void RestartSpawner(Events.OnGameRestarted evt)
+    {
+        ResetSpawner();
+        StartSpawning();
+    }
+
+    private void GameOver(Events.OnGameOver evt)
+    {
+        StopSpawning();
+    }
+
+    // =====================================================
+    // Spawn Logic
+    // =====================================================
 
     private IEnumerator SpawnRoutine()
     {
-        while (true)
+        while (spawning)
         {
             if (currentClouds < maxClouds)
             {
@@ -92,12 +162,20 @@ public class CloudSpawner : MonoBehaviour
 
         selectedLane.currentClouds++;
         currentClouds++;
-        cloud.gameObject.SetActive(true);
-        CloudController controller = cloud.GetComponent<CloudController>();
+
+        cloud.SetActive(true);
+
+        CloudController controller =
+            cloud.GetComponent<CloudController>();
 
         if (controller != null)
         {
-            controller.Initialize(targetPoint.position, speed, CloudPool.Instance, this, selectedLane);
+            controller.Initialize(
+                targetPoint.position,
+                speed,
+                CloudPool.Instance,
+                this,
+                selectedLane);
         }
     }
 
@@ -110,19 +188,5 @@ public class CloudSpawner : MonoBehaviour
             lane.currentClouds =
                 Mathf.Max(0, lane.currentClouds - 1);
         }
-    }
-
-    public void ResetSpawner()
-    {
-        StopAllCoroutines();
-
-        currentClouds = 0;
-
-        foreach (CloudLane lane in lanes)
-        {
-            lane.currentClouds = 0;
-        }
-
-        CloudPool.Instance.ReturnAll();
     }
 }

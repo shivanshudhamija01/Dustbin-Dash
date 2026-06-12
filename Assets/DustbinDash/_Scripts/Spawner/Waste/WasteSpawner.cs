@@ -48,10 +48,21 @@ public class WasteSpawner : MonoBehaviour
     {
         provider = providerSource as IWasteProvider;
     }
-    void Start()
+    void OnEnable()
     {
-        StartSpawning();
+        EventBus.Subscribe<Events.OnLevelChanged>(SetLevel);
+        EventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
+        EventBus.Subscribe<Events.OnGameRestarted>(ResetSpawner);
+        EventBus.Subscribe<Events.OnGameOver>(GameOver);
     }
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<Events.OnLevelChanged>(SetLevel);
+        EventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
+        EventBus.Unsubscribe<Events.OnGameRestarted>(ResetSpawner);
+        EventBus.Unsubscribe<Events.OnGameOver>(GameOver);
+    }
+
     /// <summary>Start spawning from the given level (default 1).</summary>
     public void StartSpawning(int level = 1)
     {
@@ -70,14 +81,6 @@ public class WasteSpawner : MonoBehaviour
             StopCoroutine(_spawnRoutine);
             _spawnRoutine = null;
         }
-    }
-    void OnEnable()
-    {
-        EventBus.Subscribe<Events.OnLevelChanged>(SetLevel);
-    }
-    void OnDisable()
-    {
-        EventBus.Unsubscribe<Events.OnLevelChanged>(SetLevel);
     }
     /// <summary>Increase difficulty by one level.</summary>
     /// I have to invoke this method on score update after particular range
@@ -123,7 +126,7 @@ public class WasteSpawner : MonoBehaviour
 
         // 5. Random spin -------------------------------------------------------
         // May be here i can also add multipler like i did in speed and all that things from the wastedata
-        float spin = Random.Range(-maxAngularSpeed, maxAngularSpeed);
+        float spin = Random.Range(-maxAngularSpeed, maxAngularSpeed) * data.angularVelocityMultiplier;
 
         // 6. Launch ------------------------------------------------------------
         item.Launch(velocity, spin);
@@ -168,4 +171,22 @@ public class WasteSpawner : MonoBehaviour
             0f
         );
     }
+    private void StartSpawner(Events.OnGameStarted evt)
+    {
+        StartSpawning();
+    }
+    private void ResetSpawner(Events.OnGameRestarted evt)
+    {
+        StopSpawning();
+        provider.ReturnAll();
+        StartSpawning();
+    }
+    private void GameOver(Events.OnGameOver evt)
+    {
+        StopSpawning();
+    }
 }
+// Spanwer will listen to the event , 
+// When the play game is start or when the restart is pressed, 
+// First think he will do is that, stop spawning , and then start spawning
+// And also reset the pool 

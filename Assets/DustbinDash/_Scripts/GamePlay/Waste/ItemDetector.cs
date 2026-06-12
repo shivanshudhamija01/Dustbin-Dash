@@ -26,8 +26,7 @@ public class ItemDetector : MonoBehaviour
     {
         if (collision.collider.CompareTag("Wall"))
         {
-            EventBus.Publish(
-                new Events.OnWasteWallHit(wasteItem));
+            EventBus.Publish(new Events.OnWasteWallHit(wasteItem));
         }
     }
 }

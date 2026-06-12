@@ -4,41 +4,61 @@ using UnityEngine.InputSystem;
 public class DustbinController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 800f;
-
-    [SerializeField] private float leftLimit = -800f;
-    [SerializeField] private float rightLimit = 800f;
-
+    [SerializeField] private float edgePadding = 30f;
+    [SerializeField] private Animator animator;
     private RectTransform rectTransform;
+    private RectTransform canvasRect;
     private float input;
+    private int isWalking;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-    }
 
+        Canvas canvas = GetComponentInParent<Canvas>();
+        canvasRect = canvas.GetComponent<RectTransform>();
+    }
+    void Start()
+    {
+        isWalking = Animator.StringToHash("isWalking");
+    }
     private void Update()
     {
-        input = 0;
+        HandleInput();
+        Move();
+    }
 
-        if (UnityEngine.InputSystem.Keyboard.current.leftArrowKey.isPressed ||
-            UnityEngine.InputSystem.Keyboard.current.aKey.isPressed)
+    private void HandleInput()
+    {
+        input = 0f;
+
+        if (Keyboard.current.leftArrowKey.isPressed ||
+            Keyboard.current.aKey.isPressed)
         {
-            input = -1;
+            input = -1f;
         }
-        else if (UnityEngine.InputSystem.Keyboard.current.rightArrowKey.isPressed ||
-                 UnityEngine.InputSystem.Keyboard.current.dKey.isPressed)
+        else if (Keyboard.current.rightArrowKey.isPressed ||
+                 Keyboard.current.dKey.isPressed)
         {
-            input = 1;
+            input = 1f;
         }
-        // float input = 1;
-        Vector3 position = transform.position;
+        bool walkInput = input != 0 ? true : false;
+        animator.SetBool(isWalking, walkInput);
+    }
 
-        position.x += input * moveSpeed * Time.deltaTime;
+    private void Move()
+    {
+        Vector2 pos = rectTransform.anchoredPosition;
 
-        position.x = Mathf.Clamp(
-            position.x,
-            leftLimit,
-            rightLimit);
+        pos.x += input * moveSpeed * Time.deltaTime;
 
-        transform.position = position;
+        float canvasHalfWidth = canvasRect.rect.width * 0.5f;
+        float binHalfWidth = rectTransform.rect.width * 0.5f;
+
+        float minX = -canvasHalfWidth + binHalfWidth + edgePadding;
+        float maxX = canvasHalfWidth - binHalfWidth - edgePadding;
+
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+
+        rectTransform.anchoredPosition = pos;
     }
 }

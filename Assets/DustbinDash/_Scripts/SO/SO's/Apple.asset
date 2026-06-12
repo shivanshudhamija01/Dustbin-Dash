@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a448f2c781a43bca08e94c9a3eda8b, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: Assembly-CSharp::WasteData
-  sprite: {fileID: 21300000, guid: fd03acc4932f449eb819a3bd7319b442, type: 3}
-  displayName: Apple
   baseScore: 10
-  speedBonus: 0
-  driftBonus: 0
+  speedMultiplier: 1.15
+  driftMultiplier: 1.25
+  angularVelocityMultiplier: 1.25
+  bounceFromWalls: 1
+  bounceStrength: 1.5

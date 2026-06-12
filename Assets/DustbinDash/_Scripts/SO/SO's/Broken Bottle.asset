@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a448f2c781a43bca08e94c9a3eda8b, type: 3}
   m_Name: Broken Bottle
   m_EditorClassIdentifier: Assembly-CSharp::WasteData
-  sprite: {fileID: 21300000, guid: d8608fc3ffbaf4307aec0136eda102b7, type: 3}
-  displayName: Broken Bottle
   baseScore: 10
-  speedBonus: 0
-  driftBonus: 0
+  speedMultiplier: 1
+  driftMultiplier: 1.5
+  angularVelocityMultiplier: 1
+  bounceFromWalls: 1
+  bounceStrength: 2

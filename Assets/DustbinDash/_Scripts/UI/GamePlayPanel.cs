@@ -13,9 +13,11 @@ public class GamePlayPanel : MonoBehaviour
     private int livesLost;
     void Awake()
     {
+        scoreText.text = "0";
         pauseButton.onClick.AddListener(OnPauseButtonClicked);
         openBin.onClick.AddListener(OnOpenBinClicked);
         livesLost = 0;
+        EventBus.Subscribe<Events.OnGameRestarted>(RestoreLives);
     }
     void OnEnable()
     {
@@ -27,8 +29,13 @@ public class GamePlayPanel : MonoBehaviour
         EventBus.Unsubscribe<Events.OnScoreAdded>(UpdateScore);
         EventBus.Unsubscribe<Events.OnLivesChanged>(UpdateLivesIcon);
     }
+    void OnDestroy()
+    {
+        EventBus.Unsubscribe<Events.OnGameRestarted>(RestoreLives);
+    }
     private void OnPauseButtonClicked()
     {
+        Time.timeScale = 0f;
         EventBus.Publish(new Events.OnGamePaused());
     }
     private void OnOpenBinClicked()
@@ -46,6 +53,14 @@ public class GamePlayPanel : MonoBehaviour
         if (livesLost >= 0)
         {
             lives[livesLost].color = new Color(0.5f, 0.5f, 0.5f);
+        }
+    }
+    private void RestoreLives(Events.OnGameRestarted evt)
+    {
+        scoreText.text = "0";
+        for (int i = 0; i < lives.Count; i++)
+        {
+            lives[i].color = new Color(1f, 1f, 1f);
         }
     }
 }
