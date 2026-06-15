@@ -1,11 +1,14 @@
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 public class ItemDetector : MonoBehaviour
 {
     private WasteItem wasteItem;
     private IEventBus eventBus;
+    private IAudioService audioService;
     private void Awake()
     {
         eventBus = ServiceContainer.Get<IEventBus>();
+        audioService = ServiceContainer.Get<IAudioService>();
         wasteItem = GetComponent<WasteItem>();
     }
 
@@ -13,13 +16,14 @@ public class ItemDetector : MonoBehaviour
     {
         if (other.CompareTag("BinOpening"))
         {
+            audioService.PlaySFX(SoundType.wastecatch);
             eventBus.Publish(new Events.OnWasteCaught(wasteItem));
         }
 
         if (other.CompareTag("Ground"))
         {
-            eventBus.Publish(
-                new Events.OnWasteMissed(wasteItem));
+            audioService.PlaySFX(SoundType.wastedrop);
+            eventBus.Publish(new Events.OnWasteMissed(wasteItem));
         }
     }
 

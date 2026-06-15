@@ -10,9 +10,11 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI bestScoreText;
 
     private IEventBus eventBus;
+    private IAudioService audioService;
     void Awake()
     {
         eventBus = ServiceContainer.Get<IEventBus>();
+        audioService = ServiceContainer.Get<IAudioService>();
         restartButton.onClick.AddListener(OnRestartButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
         eventBus.Subscribe<Events.OnGameOver>(UpdateScore);
@@ -24,10 +26,12 @@ public class GameOverPanel : MonoBehaviour
     void OnRestartButtonClicked()
     {
         Time.timeScale = 1f;
+        audioService.PlaySFX(SoundType.click);
         eventBus.Publish(new Events.OnGameRestarted());
     }
     void OnExitButtonClicked()
     {
+        audioService.PlaySFX(SoundType.click);
         Application.Quit();
     }
     void UpdateScore(Events.OnGameOver evt)

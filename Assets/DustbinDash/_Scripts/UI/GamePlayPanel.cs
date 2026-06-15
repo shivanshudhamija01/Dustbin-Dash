@@ -12,9 +12,11 @@ public class GamePlayPanel : MonoBehaviour
     [SerializeField] private int maxLives;
     private int livesLost;
     private IEventBus eventBus;
+    private IAudioService audioService;
     void Awake()
     {
         eventBus = ServiceContainer.Get<IEventBus>();
+        audioService = ServiceContainer.Get<IAudioService>();
         scoreText.text = "0";
         pauseButton.onClick.AddListener(OnPauseButtonClicked);
         openBin.onClick.AddListener(OnOpenBinClicked);
@@ -38,6 +40,7 @@ public class GamePlayPanel : MonoBehaviour
     private void OnPauseButtonClicked()
     {
         Time.timeScale = 0f;
+        audioService.PlaySFX(SoundType.click);
         eventBus.Publish(new Events.OnGamePaused());
     }
     private void OnOpenBinClicked()

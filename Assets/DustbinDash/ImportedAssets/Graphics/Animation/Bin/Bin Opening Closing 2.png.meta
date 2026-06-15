@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: edbecfbb4ff6f476d981ef11b0fed665
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2207945516198611059
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_0
+  - first:
+      213: 6943968519439826827
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_1
+  - first:
+      213: 4232338958359001429
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_2
+  - first:
+      213: -822794833448139504
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_3
+  - first:
+      213: -6580136216801477122
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_4
+  - first:
+      213: 8523665435962462031
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_5
+  - first:
+      213: -7618827245435395405
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_6
+  - first:
+      213: 1969520811782770312
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_7
+  - first:
+      213: 2886073905947547751
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_8
+  - first:
+      213: -2355700046271747824
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_9
+  - first:
+      213: -2582702163247853485
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_10
+  - first:
+      213: 6280598862927971285
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_11
+  - first:
+      213: -6527734674671171285
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_12
+  - first:
+      213: -7836848163070004116
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_13
+  - first:
+      213: -2940282369979723685
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_14
+  - first:
+      213: 389335559610658074
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_15
+  - first:
+      213: -8197887498832649914
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_16
+  - first:
+      213: 3898145347808759249
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_17
+  - first:
+      213: 4590491814083927427
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_18
+  - first:
+      213: -600252717650805245
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_19
+  - first:
+      213: 2583200441845596626
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_20
+  - first:
+      213: -2191676168313264864
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_21
+  - first:
+      213: 1082681366354344311
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_22
+  - first:
+      213: -9219017777540772667
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_23
+  - first:
+      213: 3638698199792488184
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_24
+  - first:
+      213: 7567228024646242007
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_25
+  - first:
+      213: -2235511604246218331
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_26
+  - first:
+      213: -5141926646676192428
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_27
+  - first:
+      213: 5114527652629096030
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_28
+  - first:
+      213: -4854918099116047868
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_29
+  - first:
+      213: -6293995034058666258
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_30
+  - first:
+      213: 6226720298879905770
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_31
+  - first:
+      213: -4530106569325823906
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_32
+  - first:
+      213: 1366379583724190208
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_33
+  - first:
+      213: 2222812193160698296
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_34
+  - first:
+      213: -6448740292195318683
+    second: sprite-max-px-frames-36-rows-6-cols-6 (8)_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3e235ecaa614b019b4658ff1f0f750
+      internalID: -345476023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f200836ec2c554467970e99591aa16d6
+      internalID: 1612944797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_2
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6610df7a8a00440faa6c3de414fb0eb0
+      internalID: -1883354027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_3
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea28229ca3f74665adb281508af22a1
+      internalID: 1602712369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_4
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4993cd17e2836423c9fd852061ceb73a
+      internalID: 1865284144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_5
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3540
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae962867631fc49e6be8629b4186ea4a
+      internalID: -701937442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b1925de647140958e3d0afd17752b9
+      internalID: -2103794628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_7
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be18265d75944d308e6004424668586
+      internalID: -1882667089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_8
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3045af71baaf94309afc19fc01cfa5c6
+      internalID: -758549215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_9
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3172043066714b81b7e7f2d7bc517e1
+      internalID: -147473101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_10
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe325ee09c644f8cb9f66f2a3e8944a
+      internalID: -1744462809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_11
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2850
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315198734e8624eb18907067b1d6e0e6
+      internalID: -104324123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0fdffe3c05f4b47911c3c6246197ab
+      internalID: -976233491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_13
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860f25ff9102642b5b5b3c16b8fc975a
+      internalID: -60895613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb9df97bebed4ae0968b6753c05d8ae
+      internalID: 1815920436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_15
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84735f90f65564d82bd270e7490ddcec
+      internalID: -2102779647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_16
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1951b436b5dff4b36be3e4cf9a4bf776
+      internalID: 324714417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_17
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2160
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15e2db4a805c4749a8cc05b28af957c
+      internalID: -414205863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf10912bd1764181b5a4912708f7b2e
+      internalID: -311077242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_19
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e513425b5a44e0793cc38b9cb72d2a
+      internalID: 2012077842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_20
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1067e3d3909f64e919a5510169c655e3
+      internalID: 592254455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_21
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2bdffad1a42423eb6e8521f117eb46
+      internalID: -331378477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_22
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c219acb9b2540bc9b9ae2b64c1992e
+      internalID: 1893719238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_23
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1470
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb32c1929298a40dfab555a1aa7ad279
+      internalID: -1711958285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378d0cb3fa18247748305ada16f2ce6c
+      internalID: 1128286221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff74c076a14d44bf92124a11e31ecf0
+      internalID: -1648554847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_26
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7599e398211954bcc8eb896558ae9e30
+      internalID: -1196014960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_27
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d520f42b30cf4ec9ad1b98bfd583a32
+      internalID: -350683887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_28
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a23293e473c4d46b126f0ba2f90459
+      internalID: -306384303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_29
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 780
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df4038b97bcb4e088d2e915e4a82196
+      internalID: 1438466585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fed0cc30833e4278b265dfa696f3ab4
+      internalID: -749920479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_31
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1618648d7589498ab1dcd64003c800c
+      internalID: -1479527675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_32
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a88a779be2dc4aa4afc431a408d0634
+      internalID: 62680299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_33
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a821686d6de94e4cb751110dc775232
+      internalID: -1306727527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_34
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d836f2e15feb428aaaec129500462b6
+      internalID: -338435919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Opening Closing 2_35
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 90
+        width: 380
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8c0cea4e6564c7ab70bbb9a4cf93ca
+      internalID: 1320628982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 11ee427eb0e43438eaf6dcf75d5a3876
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":380.0,"y":600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":90.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bin Opening Closing 2_0: -345476023
+      Bin Opening Closing 2_1: 1612944797
+      Bin Opening Closing 2_10: -1744462809
+      Bin Opening Closing 2_11: -104324123
+      Bin Opening Closing 2_12: -976233491
+      Bin Opening Closing 2_13: -60895613
+      Bin Opening Closing 2_14: 1815920436
+      Bin Opening Closing 2_15: -2102779647
+      Bin Opening Closing 2_16: 324714417
+      Bin Opening Closing 2_17: -414205863
+      Bin Opening Closing 2_18: -311077242
+      Bin Opening Closing 2_19: 2012077842
+      Bin Opening Closing 2_2: -1883354027
+      Bin Opening Closing 2_20: 592254455
+      Bin Opening Closing 2_21: -331378477
+      Bin Opening Closing 2_22: 1893719238
+      Bin Opening Closing 2_23: -1711958285
+      Bin Opening Closing 2_24: 1128286221
+      Bin Opening Closing 2_25: -1648554847
+      Bin Opening Closing 2_26: -1196014960
+      Bin Opening Closing 2_27: -350683887
+      Bin Opening Closing 2_28: -306384303
+      Bin Opening Closing 2_29: 1438466585
+      Bin Opening Closing 2_3: 1602712369
+      Bin Opening Closing 2_30: -749920479
+      Bin Opening Closing 2_31: -1479527675
+      Bin Opening Closing 2_32: 62680299
+      Bin Opening Closing 2_33: -1306727527
+      Bin Opening Closing 2_34: -338435919
+      Bin Opening Closing 2_35: 1320628982
+      Bin Opening Closing 2_4: 1865284144
+      Bin Opening Closing 2_5: -701937442
+      Bin Opening Closing 2_6: -2103794628
+      Bin Opening Closing 2_7: -1882667089
+      Bin Opening Closing 2_8: -758549215
+      Bin Opening Closing 2_9: -147473101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

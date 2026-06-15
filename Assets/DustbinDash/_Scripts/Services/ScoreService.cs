@@ -1,33 +1,64 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class ScoreService : IScoreService
 {
+    private int currentScore;
+    private int currentLevel;
+    private int highScore;
+
+    private int nextLevelThreshold;
     private int pointsPerLevel;
     private int maxLevel;
-    public int GetCurrentScore()
-    {
-        return 0;
-    }
 
-    public int GetHighScore()
-    {
-        return 0;
-    }
+    public int CurrentScore => currentScore;
+    public int CurrentLevel => currentLevel;
+    public int HighScore => highScore;
 
     public void Initialize(int pointsPerLevel, int maxLevel)
     {
         this.pointsPerLevel = pointsPerLevel;
         this.maxLevel = maxLevel;
+
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        ResetProgress();
     }
 
-    public void SetHighScore(int score)
+    public void AddScore(int points)
     {
+        currentScore += points;
 
+        CheckLevelUp();
     }
 
-    public void SetScore(int score)
+    private void CheckLevelUp()
     {
+        if (currentLevel >= maxLevel)
+            return;
 
+        if (currentScore < nextLevelThreshold)
+            return;
+
+        currentLevel++;
+
+        nextLevelThreshold += pointsPerLevel;
+    }
+
+    public void ResetProgress()
+    {
+        currentScore = 0;
+        currentLevel = 1;
+        nextLevelThreshold = pointsPerLevel;
+    }
+
+    public void SaveHighScore()
+    {
+        if (currentScore <= highScore)
+            return;
+
+        highScore = currentScore;
+
+        PlayerPrefs.SetInt("HighScore", highScore);
+        PlayerPrefs.Save();
     }
 }

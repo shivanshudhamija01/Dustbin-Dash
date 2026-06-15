@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private ScoreHandler scoreHandler;
+    private IScoreService scoreService;
     private IEventBus eventBus;
     void Awake()
     {
         eventBus = ServiceContainer.Get<IEventBus>();
+        scoreService = ServiceContainer.Get<IScoreService>();
+
     }
     private void OnEnable()
     {
@@ -17,28 +19,14 @@ public class GameManager : MonoBehaviour
     {
         eventBus.Unsubscribe<Events.OnLivesDepleted>(HandleLivesDepleted);
     }
-
-    // private void HandleLivesDepleted(Events.OnLivesDepleted evt)
-    // {
-
-    //     scoreHandler.SaveHighScore();
-
-    //     EventBus.Publish(new Events.OnGameOver(scoreHandler.Score, scoreHandler.HighScore));
-    // }
     private void HandleLivesDepleted(Events.OnLivesDepleted evt)
     {
-        Debug.Log($"Score Before Save = {scoreHandler.Score}");
-        Debug.Log($"HighScore Before Save = {scoreHandler.HighScore}");
+        scoreService.SaveHighScore();
 
-        scoreHandler.SaveHighScore();
+        int currentScore = scoreService.CurrentScore;
+        int highScore = scoreService.HighScore;
 
-        Debug.Log($"Score After Save = {scoreHandler.Score}");
-        Debug.Log($"HighScore After Save = {scoreHandler.HighScore}");
-
-        eventBus.Publish(
-            new Events.OnGameOver(
-                scoreHandler.Score,
-                scoreHandler.HighScore));
+        eventBus.Publish(new Events.OnGameOver(currentScore, highScore));
     }
 
 }
