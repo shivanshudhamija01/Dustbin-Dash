@@ -44,23 +44,25 @@ public class WasteSpawner : MonoBehaviour
     private bool _spawning = false;
     private Coroutine _spawnRoutine;
     private IWasteProvider provider;
+    private IEventBus eventBus;
     private void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         provider = providerSource as IWasteProvider;
     }
     void OnEnable()
     {
-        EventBus.Subscribe<Events.OnLevelChanged>(SetLevel);
-        EventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
-        EventBus.Subscribe<Events.OnGameRestarted>(ResetSpawner);
-        EventBus.Subscribe<Events.OnGameOver>(GameOver);
+        eventBus.Subscribe<Events.OnLevelChanged>(SetLevel);
+        eventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
+        eventBus.Subscribe<Events.OnGameRestarted>(ResetSpawner);
+        eventBus.Subscribe<Events.OnGameOver>(GameOver);
     }
     void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnLevelChanged>(SetLevel);
-        EventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
-        EventBus.Unsubscribe<Events.OnGameRestarted>(ResetSpawner);
-        EventBus.Unsubscribe<Events.OnGameOver>(GameOver);
+        eventBus.Unsubscribe<Events.OnLevelChanged>(SetLevel);
+        eventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(ResetSpawner);
+        eventBus.Unsubscribe<Events.OnGameOver>(GameOver);
     }
 
     /// <summary>Start spawning from the given level (default 1).</summary>
@@ -88,7 +90,6 @@ public class WasteSpawner : MonoBehaviour
     {
         int level = evt.Level;
         _level = Mathf.Max(1, level);
-        Debug.Log("Level changed he he : " + level);
     }
 
     // ── Core spawn loop ───────────────────────────────────────────────────────
@@ -147,7 +148,6 @@ public class WasteSpawner : MonoBehaviour
     private float CalculateFallSpeed(WasteData data)
     {
         float speed = (baseSpeed + (_level - 1) * speedPerLevel + Random.Range(0f, speedJitter)) * data.speedMultiplier;
-        Debug.Log("Level is this : " + _level + " " + "speed is : " + speed);
         return Mathf.Max(0.5f, speed);
     }
 

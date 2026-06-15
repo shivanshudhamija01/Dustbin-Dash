@@ -11,32 +11,34 @@ public class GamePlayPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private int maxLives;
     private int livesLost;
+    private IEventBus eventBus;
     void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         scoreText.text = "0";
         pauseButton.onClick.AddListener(OnPauseButtonClicked);
         openBin.onClick.AddListener(OnOpenBinClicked);
         livesLost = 0;
-        EventBus.Subscribe<Events.OnGameRestarted>(RestoreLives);
+        eventBus.Subscribe<Events.OnGameRestarted>(RestoreLives);
     }
     void OnEnable()
     {
-        EventBus.Subscribe<Events.OnScoreAdded>(UpdateScore);
-        EventBus.Subscribe<Events.OnLivesChanged>(UpdateLivesIcon);
+        eventBus.Subscribe<Events.OnScoreAdded>(UpdateScore);
+        eventBus.Subscribe<Events.OnLivesChanged>(UpdateLivesIcon);
     }
     void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnScoreAdded>(UpdateScore);
-        EventBus.Unsubscribe<Events.OnLivesChanged>(UpdateLivesIcon);
+        eventBus.Unsubscribe<Events.OnScoreAdded>(UpdateScore);
+        eventBus.Unsubscribe<Events.OnLivesChanged>(UpdateLivesIcon);
     }
     void OnDestroy()
     {
-        EventBus.Unsubscribe<Events.OnGameRestarted>(RestoreLives);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(RestoreLives);
     }
     private void OnPauseButtonClicked()
     {
         Time.timeScale = 0f;
-        EventBus.Publish(new Events.OnGamePaused());
+        eventBus.Publish(new Events.OnGamePaused());
     }
     private void OnOpenBinClicked()
     {
@@ -52,7 +54,7 @@ public class GamePlayPanel : MonoBehaviour
         livesLost = maxLives - remainingLives - 1;
         if (livesLost >= 0)
         {
-            lives[livesLost].color = new Color(0.5f, 0.5f, 0.5f);
+            lives[livesLost].color = new Color(1f, 1f, 1f, 0.5f);
         }
     }
     private void RestoreLives(Events.OnGameRestarted evt)
@@ -60,7 +62,7 @@ public class GamePlayPanel : MonoBehaviour
         scoreText.text = "0";
         for (int i = 0; i < lives.Count; i++)
         {
-            lives[i].color = new Color(1f, 1f, 1f);
+            lives[i].color = new Color(1f, 1f, 1f, 1f);
         }
     }
 }

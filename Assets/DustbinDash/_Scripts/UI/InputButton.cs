@@ -1,4 +1,5 @@
 using System;
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,13 +7,18 @@ public class InputButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private int direction;
 
+    private IInputService inputService;
+    private void Awake()
+    {
+        inputService = ServiceContainer.Get<IInputService>();
+    }
     public void OnPointerDown(PointerEventData eventData)
     {
-        EventBus.Publish(new Events.OnGameInput(direction));
+        inputService.SetDirection(direction);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        EventBus.Publish(new Events.OnGameInput(0));
+        inputService.SetDirection(0);
     }
 }

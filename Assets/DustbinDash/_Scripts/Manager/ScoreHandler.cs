@@ -11,24 +11,24 @@ public class ScoreHandler : MonoBehaviour
     public int HighScore { get; private set; }
 
     private int nextLevelThreshold;
-
+    private IEventBus eventBus;
     private void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
-
         ResetProgress();
     }
 
     private void OnEnable()
     {
-        EventBus.Subscribe<Events.OnWasteCaught>(HandleCatch);
-        EventBus.Subscribe<Events.OnGameRestarted>(HandleRestart);
+        eventBus.Subscribe<Events.OnWasteCaught>(HandleCatch);
+        eventBus.Subscribe<Events.OnGameRestarted>(HandleRestart);
     }
 
     private void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnWasteCaught>(HandleCatch);
-        EventBus.Unsubscribe<Events.OnGameRestarted>(HandleRestart);
+        eventBus.Unsubscribe<Events.OnWasteCaught>(HandleCatch);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(HandleRestart);
     }
 
     private void HandleCatch(Events.OnWasteCaught evt)
@@ -39,9 +39,8 @@ public class ScoreHandler : MonoBehaviour
         Score += points;
 
         // This event will be listened by the gameplay panel to update the score
-        EventBus.Publish(new Events.OnScoreAdded(Score));
+        eventBus.Publish(new Events.OnScoreAdded(Score));
 
-        Debug.Log("Score is : " + Score);
         CheckLevelUp();
     }
 
@@ -57,7 +56,7 @@ public class ScoreHandler : MonoBehaviour
 
         nextLevelThreshold += pointsPerLevel;
 
-        EventBus.Publish(new Events.OnLevelChanged(Level));
+        eventBus.Publish(new Events.OnLevelChanged(Level));
     }
 
     private void HandleRestart(Events.OnGameRestarted evt)
@@ -72,7 +71,7 @@ public class ScoreHandler : MonoBehaviour
         nextLevelThreshold = pointsPerLevel;
 
         // This event will be listened by the spawner as well as to the ui manager, 
-        EventBus.Publish(new Events.OnLevelChanged(Level));
+        eventBus.Publish(new Events.OnLevelChanged(Level));
     }
 
     public void SaveHighScore()

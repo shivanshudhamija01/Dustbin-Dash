@@ -2,7 +2,16 @@ public class Events
 {
     public readonly struct OnGameStarted { }
     public readonly struct OnGameRestarted { }
-    public readonly struct OnGameOver { }
+    public struct OnGameOver
+    {
+        public int Score;
+        public int HighScore;
+        public OnGameOver(int score, int highscore)
+        {
+            Score = score;
+            HighScore = highscore;
+        }
+    }
     public readonly struct OnGamePaused { }
     public readonly struct OnGameResumed { }
     public readonly struct OnWasteCaught
@@ -57,12 +66,7 @@ public class Events
             Lives = lives;
         }
     }
-    public struct OnGameInput
+    public readonly struct OnLivesDepleted
     {
-        public int Direction;
-        public OnGameInput(int direction)
-        {
-            Direction = direction;
-        }
     }
 }

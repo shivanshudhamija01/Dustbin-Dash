@@ -12,23 +12,24 @@ public class WastePool : MonoBehaviour, IWasteProvider
     private readonly List<WasteItem> activeWaste = new();
 
     private int countOfWasteItems;
-
+    private IEventBus eventBus;
     private void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         countOfWasteItems = wasteItems.Count;
         InstantiatePool();
     }
 
     private void OnEnable()
     {
-        EventBus.Subscribe<Events.OnWasteCaught>(OnWasteCaught);
-        EventBus.Subscribe<Events.OnWasteMissed>(OnWasteMissed);
+        eventBus.Subscribe<Events.OnWasteCaught>(OnWasteCaught);
+        eventBus.Subscribe<Events.OnWasteMissed>(OnWasteMissed);
     }
 
     private void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnWasteCaught>(OnWasteCaught);
-        EventBus.Unsubscribe<Events.OnWasteMissed>(OnWasteMissed);
+        eventBus.Unsubscribe<Events.OnWasteCaught>(OnWasteCaught);
+        eventBus.Unsubscribe<Events.OnWasteMissed>(OnWasteMissed);
     }
 
     private void InstantiatePool()

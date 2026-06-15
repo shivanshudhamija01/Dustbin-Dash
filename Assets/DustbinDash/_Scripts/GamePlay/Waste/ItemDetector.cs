@@ -2,9 +2,10 @@ using UnityEngine;
 public class ItemDetector : MonoBehaviour
 {
     private WasteItem wasteItem;
-
+    private IEventBus eventBus;
     private void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         wasteItem = GetComponent<WasteItem>();
     }
 
@@ -12,12 +13,12 @@ public class ItemDetector : MonoBehaviour
     {
         if (other.CompareTag("BinOpening"))
         {
-            EventBus.Publish(new Events.OnWasteCaught(wasteItem));
+            eventBus.Publish(new Events.OnWasteCaught(wasteItem));
         }
 
         if (other.CompareTag("Ground"))
         {
-            EventBus.Publish(
+            eventBus.Publish(
                 new Events.OnWasteMissed(wasteItem));
         }
     }
@@ -26,7 +27,7 @@ public class ItemDetector : MonoBehaviour
     {
         if (collision.collider.CompareTag("Wall"))
         {
-            EventBus.Publish(new Events.OnWasteWallHit(wasteItem));
+            eventBus.Publish(new Events.OnWasteWallHit(wasteItem));
         }
     }
 }

@@ -3,16 +3,16 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class WasteItem : MonoBehaviour
 {
-
     [SerializeField] private WasteData config;
     private Rigidbody2D _rb;
+    private IEventBus eventBus;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-
-        // i will remove these from here and add it to the waste pool while resetting it to the pool
         _rb.gravityScale = 0f;
         _rb.constraints = RigidbodyConstraints2D.None;
+
+        eventBus = ServiceContainer.Get<IEventBus>();
     }
 
     private void OnEnable()
@@ -20,11 +20,11 @@ public class WasteItem : MonoBehaviour
         // I will remove these reference from here 
         _rb.linearVelocity = Vector2.zero;
         _rb.angularVelocity = 0f;
-        EventBus.Subscribe<Events.OnWasteWallHit>(OnWallHit);
+        eventBus.Subscribe<Events.OnWasteWallHit>(OnWallHit);
     }
     void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnWasteWallHit>(OnWallHit);
+        eventBus.Unsubscribe<Events.OnWasteWallHit>(OnWallHit);
     }
     public void Launch(Vector2 velocity, float angularVelocityDeg)
     {

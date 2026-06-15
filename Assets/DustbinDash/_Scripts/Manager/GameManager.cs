@@ -2,85 +2,43 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private WasteSpawner spawner;
-    [SerializeField] private MonoBehaviour providerSource;
-
-    private IWasteProvider provider;
-
-    public enum GameState
+    [SerializeField] private ScoreHandler scoreHandler;
+    private IEventBus eventBus;
+    void Awake()
     {
-        Idle,
-        Playing,
-        GameOver
+        eventBus = ServiceContainer.Get<IEventBus>();
     }
-
-    public GameState State { get; private set; } = GameState.Idle;
-
-    private void Awake()
-    {
-        provider = providerSource as IWasteProvider;
-    }
-
     private void OnEnable()
     {
-        EventBus.Subscribe<Events.OnGameOver>(HandleGameOver);
-        EventBus.Subscribe<Events.OnLevelChanged>(HandleLevelChanged);
+        eventBus.Subscribe<Events.OnLivesDepleted>(HandleLivesDepleted);
     }
 
     private void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnGameOver>(HandleGameOver);
-        EventBus.Unsubscribe<Events.OnLevelChanged>(HandleLevelChanged);
+        eventBus.Unsubscribe<Events.OnLivesDepleted>(HandleLivesDepleted);
     }
 
-    private void Start()
-    {
-        StartGame();
-    }
-
-    public void StartGame()
-    {
-        if (State == GameState.Playing)
-            return;
-
-        State = GameState.Playing;
-
-        spawner.StartSpawning(1);
-
-        EventBus.Publish(new Events.OnGameStarted());
-    }
-
-    public void RestartGame()
-    {
-        State = GameState.Idle;
-
-        provider?.ReturnAll();
-
-        EventBus.Publish(new Events.OnGameRestarted());
-
-        StartGame();
-    }
-
-    private void HandleGameOver(Events.OnGameOver evt)
-    {
-        State = GameState.GameOver;
-
-        spawner.StopSpawning();
-
-        provider?.ReturnAll();
-    }
-
-    private void HandleLevelChanged(Events.OnLevelChanged evt)
-    {
-        // spawner.SetLevel(evt.Level);
-    }
-
-    // private void Update()
+    // private void HandleLivesDepleted(Events.OnLivesDepleted evt)
     // {
-    //     if (State == GameState.GameOver &&
-    //         Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         RestartGame();
-    //     }
+
+    //     scoreHandler.SaveHighScore();
+
+    //     EventBus.Publish(new Events.OnGameOver(scoreHandler.Score, scoreHandler.HighScore));
     // }
+    private void HandleLivesDepleted(Events.OnLivesDepleted evt)
+    {
+        Debug.Log($"Score Before Save = {scoreHandler.Score}");
+        Debug.Log($"HighScore Before Save = {scoreHandler.HighScore}");
+
+        scoreHandler.SaveHighScore();
+
+        Debug.Log($"Score After Save = {scoreHandler.Score}");
+        Debug.Log($"HighScore After Save = {scoreHandler.HighScore}");
+
+        eventBus.Publish(
+            new Events.OnGameOver(
+                scoreHandler.Score,
+                scoreHandler.HighScore));
+    }
+
 }

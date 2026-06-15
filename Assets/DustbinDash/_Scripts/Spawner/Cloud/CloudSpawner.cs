@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 public class CloudSpawner : MonoBehaviour
@@ -26,19 +27,24 @@ public class CloudSpawner : MonoBehaviour
 
     private bool spawning;
     private Coroutine spawnRoutine;
+    private IEventBus eventBus;
 
+    void Awake()
+    {
+        eventBus = ServiceContainer.Get<IEventBus>();
+    }
     private void OnEnable()
     {
-        EventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
-        EventBus.Subscribe<Events.OnGameRestarted>(RestartSpawner);
-        EventBus.Subscribe<Events.OnGameOver>(GameOver);
+        eventBus.Subscribe<Events.OnGameStarted>(StartSpawner);
+        eventBus.Subscribe<Events.OnGameRestarted>(RestartSpawner);
+        eventBus.Subscribe<Events.OnGameOver>(GameOver);
     }
 
     private void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
-        EventBus.Unsubscribe<Events.OnGameRestarted>(RestartSpawner);
-        EventBus.Unsubscribe<Events.OnGameOver>(GameOver);
+        eventBus.Unsubscribe<Events.OnGameStarted>(StartSpawner);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(RestartSpawner);
+        eventBus.Unsubscribe<Events.OnGameOver>(GameOver);
     }
 
 

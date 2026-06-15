@@ -6,9 +6,11 @@ public class MainMenuPanel : MonoBehaviour
     [SerializeField] private Button playButton;
     [SerializeField] private Button bgmButton;
     [SerializeField] private Button exitButton;
+    private IEventBus eventBus;
 
     void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         playButton.onClick.AddListener(OnPlayButtonClicked);
         bgmButton.onClick.AddListener(OnBGMButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
@@ -16,7 +18,7 @@ public class MainMenuPanel : MonoBehaviour
 
     void OnPlayButtonClicked()
     {
-        EventBus.Publish(new Events.OnGameStarted());
+        eventBus.Publish(new Events.OnGameStarted());
     }
     void OnBGMButtonClicked()
     {

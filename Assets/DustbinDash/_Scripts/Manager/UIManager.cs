@@ -6,9 +6,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gamePlayPanel;
     [SerializeField] private GameObject gamePausePanel;
     [SerializeField] private GameObject gameLostPanel;
-
+    private IEventBus eventBus;
     void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         mainMenuPanel.SetActive(true);
         gameLostPanel.SetActive(false);
         gamePausePanel.SetActive(false);
@@ -16,19 +17,19 @@ public class UIManager : MonoBehaviour
     }
     void OnEnable()
     {
-        EventBus.Subscribe<Events.OnGameStarted>(GameStarted);
-        EventBus.Subscribe<Events.OnGamePaused>(GamePaused);
-        EventBus.Subscribe<Events.OnGameResumed>(GameResumed);
-        EventBus.Subscribe<Events.OnGameOver>(GameLost);
-        EventBus.Subscribe<Events.OnGameRestarted>(GameRestart);
+        eventBus.Subscribe<Events.OnGameStarted>(GameStarted);
+        eventBus.Subscribe<Events.OnGamePaused>(GamePaused);
+        eventBus.Subscribe<Events.OnGameResumed>(GameResumed);
+        eventBus.Subscribe<Events.OnLivesDepleted>(GameLost);
+        eventBus.Subscribe<Events.OnGameRestarted>(GameRestart);
     }
     void OnDisable()
     {
-        EventBus.Unsubscribe<Events.OnGameStarted>(GameStarted);
-        EventBus.Unsubscribe<Events.OnGamePaused>(GamePaused);
-        EventBus.Unsubscribe<Events.OnGameResumed>(GameResumed);
-        EventBus.Unsubscribe<Events.OnGameOver>(GameLost);
-        EventBus.Unsubscribe<Events.OnGameRestarted>(GameRestart);
+        eventBus.Unsubscribe<Events.OnGameStarted>(GameStarted);
+        eventBus.Unsubscribe<Events.OnGamePaused>(GamePaused);
+        eventBus.Unsubscribe<Events.OnGameResumed>(GameResumed);
+        eventBus.Unsubscribe<Events.OnLivesDepleted>(GameLost);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(GameRestart);
     }
     void GameStarted(Events.OnGameStarted evt)
     {
@@ -45,7 +46,7 @@ public class UIManager : MonoBehaviour
         gamePausePanel.SetActive(false);
         gamePlayPanel.SetActive(true);
     }
-    void GameLost(Events.OnGameOver evt)
+    void GameLost(Events.OnLivesDepleted evt)
     {
         gameLostPanel.SetActive(true);
         gamePlayPanel.SetActive(false);
