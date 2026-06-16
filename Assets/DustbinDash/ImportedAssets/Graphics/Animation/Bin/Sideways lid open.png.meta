@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 19c5e8893612945f4a8d444e8bd189f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8630138743687393009
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_0
+  - first:
+      213: -2616612442568937298
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_1
+  - first:
+      213: -4847791327943228872
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_2
+  - first:
+      213: 5630034662392188504
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_3
+  - first:
+      213: 6218234904555592014
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_4
+  - first:
+      213: 5864417549489244506
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_5
+  - first:
+      213: -7843053887089076372
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_6
+  - first:
+      213: -381622502944904725
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_7
+  - first:
+      213: 1911974540773879617
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_8
+  - first:
+      213: -1113098774940414731
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_9
+  - first:
+      213: 3786659790150662091
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_10
+  - first:
+      213: 8902303197174132014
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_11
+  - first:
+      213: -3108798301193925875
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_12
+  - first:
+      213: -1529456209807468304
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_13
+  - first:
+      213: -2343804138817294862
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_14
+  - first:
+      213: 6932666534575532065
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_15
+  - first:
+      213: 5991014859043197746
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_16
+  - first:
+      213: 3004532889493108198
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_17
+  - first:
+      213: 7229476683850065595
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_18
+  - first:
+      213: -6222275842162859475
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_19
+  - first:
+      213: 4706914224521808669
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_20
+  - first:
+      213: 5737122952452585856
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_21
+  - first:
+      213: -7842038123316317467
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_22
+  - first:
+      213: 2260040876471539709
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_23
+  - first:
+      213: -7097299711100957796
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_24
+  - first:
+      213: -4895931016012908327
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_25
+  - first:
+      213: -4436375485271698156
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_26
+  - first:
+      213: 5882303505144232093
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_27
+  - first:
+      213: -5512644485525458771
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_28
+  - first:
+      213: 35579719753478157
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_29
+  - first:
+      213: 7728159917482284032
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_30
+  - first:
+      213: 1099695324823491240
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_31
+  - first:
+      213: 1163840993529489100
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_32
+  - first:
+      213: -5590615187743143141
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_33
+  - first:
+      213: -1949206093238973600
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_34
+  - first:
+      213: 6427103887277982157
+    second: sprite-max-px-frames-36-rows-6-cols-6 (10)_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sideways lid open_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4116
+        width: 480
+        height: 624
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8226ebe0158142ce9436aefdc3f6037
+      internalID: -1866255144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4115
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cc77d4031c24faa932f0771e82a97d
+      internalID: -819392922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4115
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcd4b615fbf8442c907116c93b08378
+      internalID: 1905340672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4115
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d95ed0536d134a88baa92986bab45f6
+      internalID: 323206204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4115
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5ac271a22f545f0b61db2469862baf
+      internalID: -415465789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4115
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0a0aa4ebfd7442593d60baf36ca9df
+      internalID: -661209267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81765b34684b74b27a44e622368b1571
+      internalID: 936833006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb0eb9a61b2040dc9f5a4ee5c0c9027
+      internalID: 1595978033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d40661827023440283d0c77f3a734ac
+      internalID: -1369286721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d38ed550500c4cf494a93f406370586
+      internalID: 1605308729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4aa35bef6b4250a74fbfeb755c7db
+      internalID: -1411067422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3325
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823d3e74b0adf47b688efb8b75839ed6
+      internalID: 1640877690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3912339707c0740b29e9c5b7119882e4
+      internalID: 1906931620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f7c5fc4add84a5caf887bd0a4f5091
+      internalID: -1966994937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a61a9fff0d314b71b907fe295f81c28
+      internalID: -1415522955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af41be70ed9fb44b98d725c000024160
+      internalID: 2089094129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6501953bf2a1f412f92eea7bb47db296
+      internalID: -1180017551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2535
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b0898fba1f4c67854c55ba0410277
+      internalID: -1804632168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a6c6aec4bbc47169b5eeb7d6b660ff
+      internalID: -1502266518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c814075cf65d44636bd241e153b0650e
+      internalID: 1123761112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77622b164ecb6443db3731f0d0480d66
+      internalID: -1361634805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e29cb80563034977abb62e805c89382
+      internalID: -1058220185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_22
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5ecc155dbd74bbfa54ee19083bbedc
+      internalID: -729013491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_23
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1745
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051ff9d87786a406f86c1a7091275158
+      internalID: -1100123971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196d8f3f0452646e18e5b43a3516821a
+      internalID: -2133033525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431b16e96400a4e8fbc9bc0704eb4dc3
+      internalID: -1450742079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc47bd061678c4bcbb51c7745b826fa8
+      internalID: 1492577468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_27
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6aa9031077024c12a23269ce36244fe
+      internalID: 548624835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_28
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31d651ef2ef34757a5a830599cc74d6
+      internalID: 1489965817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 955
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ea1fd7b7ed84f8386e53dbe82d0c0d
+      internalID: -475372354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9472004e3703e4cdab6b92da0457d503
+      internalID: 1868092388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f60ee6c64f943dd9082a551c002f65
+      internalID: -1542631291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8234b82c002c1463eaff561cbf0edf01
+      internalID: -409572363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6c3ae05842e431d97e29bc4d4e6747
+      internalID: 74781012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6472e587416c440f97d94149d5135f5
+      internalID: 1593518265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sideways lid open_35
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 165
+        width: 480
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d71c10a3e4e94e34b5a4af8b7978dac
+      internalID: -1008999816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7be47e09a10584da98cf7f0473b721b5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":480.0,"y":790.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sideways lid open_0: -1866255144
+      Sideways lid open_1: -819392922
+      Sideways lid open_10: -1411067422
+      Sideways lid open_11: 1640877690
+      Sideways lid open_12: 1906931620
+      Sideways lid open_13: -1966994937
+      Sideways lid open_14: -1415522955
+      Sideways lid open_15: 2089094129
+      Sideways lid open_16: -1180017551
+      Sideways lid open_17: -1804632168
+      Sideways lid open_18: -1502266518
+      Sideways lid open_19: 1123761112
+      Sideways lid open_2: 1905340672
+      Sideways lid open_20: -1361634805
+      Sideways lid open_21: -1058220185
+      Sideways lid open_22: -729013491
+      Sideways lid open_23: -1100123971
+      Sideways lid open_24: -2133033525
+      Sideways lid open_25: -1450742079
+      Sideways lid open_26: 1492577468
+      Sideways lid open_27: 548624835
+      Sideways lid open_28: 1489965817
+      Sideways lid open_29: -475372354
+      Sideways lid open_3: 323206204
+      Sideways lid open_30: 1868092388
+      Sideways lid open_31: -1542631291
+      Sideways lid open_32: -409572363
+      Sideways lid open_33: 74781012
+      Sideways lid open_34: 1593518265
+      Sideways lid open_35: -1008999816
+      Sideways lid open_4: -415465789
+      Sideways lid open_5: -661209267
+      Sideways lid open_6: 936833006
+      Sideways lid open_7: 1595978033
+      Sideways lid open_8: -1369286721
+      Sideways lid open_9: 1605308729
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

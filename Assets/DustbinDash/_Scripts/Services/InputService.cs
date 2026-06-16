@@ -25,6 +25,11 @@ public class InputService : IInputService
             : touchDirection;
     }
 
+    public void ResetInput()
+    {
+        touchDirection = 0f;
+    }
+
     public void SetDirection(float direction)
     {
         touchDirection = direction;

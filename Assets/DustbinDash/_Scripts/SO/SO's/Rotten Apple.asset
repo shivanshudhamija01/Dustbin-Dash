@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rotten Apple
   m_EditorClassIdentifier: Assembly-CSharp::WasteData
   baseScore: 10
-  speedMultiplier: 1.25
+  speedMultiplier: 1.15
   driftMultiplier: 1
   angularVelocityMultiplier: 1
   bounceFromWalls: 1

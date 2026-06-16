@@ -13,9 +13,11 @@ public class DustbinController : MonoBehaviour
 
     private float input;
     private int isWalking;
-
+    private int openBin;
+    private IEventBus eventBus;
     private void Awake()
     {
+        eventBus = ServiceContainer.Get<IEventBus>();
         rectTransform = GetComponent<RectTransform>();
 
         Canvas canvas = GetComponentInParent<Canvas>();
@@ -27,8 +29,20 @@ public class DustbinController : MonoBehaviour
     private void Start()
     {
         isWalking = Animator.StringToHash("isWalking");
+        openBin = Animator.StringToHash("OpenBin");
     }
+    void OnEnable()
+    {
+        eventBus.Subscribe<Events.OnBinOpenRequested>(OpenBinAndCatchWaste);
+        eventBus.Subscribe<Events.OnGameRestarted>(ResetAnimator);
 
+    }
+    void OnDisable()
+    {
+        eventBus.Unsubscribe<Events.OnBinOpenRequested>(OpenBinAndCatchWaste);
+        eventBus.Unsubscribe<Events.OnGameRestarted>(ResetAnimator);
+
+    }
     private void Update()
     {
         input = inputService.GetDirection();
@@ -53,5 +67,16 @@ public class DustbinController : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, minX, maxX);
 
         rectTransform.anchoredPosition = pos;
+    }
+    void OpenBinAndCatchWaste(Events.OnBinOpenRequested evt)
+    {
+        animator.SetTrigger(openBin);
+    }
+    private void ResetAnimator(Events.OnGameRestarted evt)
+    {
+        animator.ResetTrigger(openBin);
+        animator.SetBool(isWalking, false);
+
+        animator.Play("Idle", 0, 0f);
     }
 }

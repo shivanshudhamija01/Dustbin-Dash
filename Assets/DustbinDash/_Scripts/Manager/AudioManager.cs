@@ -7,11 +7,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfx;
     [SerializeField] private AudioSource gui;
 
-    [SerializeField] private List<SoundMap> soundMaps;
+    [SerializeField] private List<SoundData> soundMaps;
 
     public AudioSource BGMSource => bgm;
     public AudioSource SFXSource => sfx;
     public AudioSource GUISource => gui;
 
-    public List<SoundMap> Audios => soundMaps;
+    public List<SoundData> Audios => soundMaps;
 }

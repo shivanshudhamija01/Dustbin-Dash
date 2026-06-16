@@ -17,7 +17,7 @@ public enum SoundType
     wastedrop
 }
 [System.Serializable]
-public class SoundMap
+public class SoundData
 {
     public SoundType soundType;
     public AudioClip audioClip;

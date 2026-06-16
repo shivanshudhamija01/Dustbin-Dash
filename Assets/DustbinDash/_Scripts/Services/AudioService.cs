@@ -3,17 +3,14 @@ using UnityEngine;
 
 public class AudioService : IAudioService
 {
-    private readonly Dictionary<SoundType, SoundMap> audioMap = new();
+    private readonly Dictionary<SoundType, SoundData> audioMap = new();
 
     private readonly AudioSource bgmSource;
     private readonly AudioSource sfxSource;
     private readonly AudioSource guiSource;
 
-    private float bgmVolume;
-    private float sfxVolume;
-
-    private const string BGM_KEY = "BGM_VOLUME";
-    private const string SFX_KEY = "SFX_VOLUME";
+    private float bgmVolume = 1f;
+    private float sfxVolume = 1f;
 
     public AudioService(AudioManager audioManager)
     {
@@ -25,9 +22,6 @@ public class AudioService : IAudioService
         {
             audioMap[sound.soundType] = sound;
         }
-
-        bgmVolume = PlayerPrefs.GetFloat(BGM_KEY, 1f);
-        sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
 
         bgmSource.volume = bgmVolume;
         sfxSource.volume = sfxVolume;
@@ -70,12 +64,11 @@ public class AudioService : IAudioService
 
     public void PauseGamePlayAudio()
     {
-        AudioListener.pause = true;
+        sfxSource.Pause();
     }
-
-    public void ResumeGamePlayAudio()
+    public void ResumeGamePauseAudio()
     {
-        AudioListener.pause = false;
+        sfxSource.UnPause();
     }
 
     public void SetBGMVolume(float value)
@@ -83,29 +76,5 @@ public class AudioService : IAudioService
         bgmVolume = Mathf.Clamp01(value);
 
         bgmSource.volume = bgmVolume;
-
-        PlayerPrefs.SetFloat(BGM_KEY, bgmVolume);
-        PlayerPrefs.Save();
-    }
-
-    public void SetSFXVolume(float value)
-    {
-        sfxVolume = Mathf.Clamp01(value);
-
-        sfxSource.volume = sfxVolume;
-        guiSource.volume = sfxVolume;
-
-        PlayerPrefs.SetFloat(SFX_KEY, sfxVolume);
-        PlayerPrefs.Save();
-    }
-
-    public float GetBGMVolume()
-    {
-        return bgmVolume;
-    }
-
-    public float GetSFXVolume()
-    {
-        return sfxVolume;
     }
 }

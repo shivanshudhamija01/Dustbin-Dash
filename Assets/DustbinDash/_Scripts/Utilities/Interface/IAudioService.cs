@@ -5,11 +5,8 @@ public interface IAudioService
     void PlayUISFX(SoundType soundType);
 
     void PauseGamePlayAudio();
-    void ResumeGamePlayAudio();
+    void ResumeGamePauseAudio();
+
 
     void SetBGMVolume(float value);
-    void SetSFXVolume(float value);
-
-    float GetBGMVolume();
-    float GetSFXVolume();
 }

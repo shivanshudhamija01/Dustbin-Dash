@@ -2,6 +2,10 @@ public class Events
 {
     public readonly struct OnGameStarted { }
     public readonly struct OnGameRestarted { }
+    public readonly struct OnLivesDepleted { }
+    public readonly struct OnGamePaused { }
+    public readonly struct OnGameResumed { }
+    public struct OnBinOpenRequested { }
     public struct OnGameOver
     {
         public int Score;
@@ -12,8 +16,6 @@ public class Events
             HighScore = highscore;
         }
     }
-    public readonly struct OnGamePaused { }
-    public readonly struct OnGameResumed { }
     public readonly struct OnWasteCaught
     {
         public readonly WasteItem Waste;
@@ -66,7 +68,5 @@ public class Events
             Lives = lives;
         }
     }
-    public readonly struct OnLivesDepleted
-    {
-    }
+
 }

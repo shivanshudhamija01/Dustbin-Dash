@@ -45,6 +45,7 @@ public class GamePlayPanel : MonoBehaviour
     }
     private void OnOpenBinClicked()
     {
+        eventBus.Publish(new Events.OnBinOpenRequested());
     }
     private void UpdateScore(Events.OnScoreAdded evt)
     {

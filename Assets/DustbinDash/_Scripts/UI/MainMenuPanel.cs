@@ -6,8 +6,10 @@ public class MainMenuPanel : MonoBehaviour
     [SerializeField] private Button playButton;
     [SerializeField] private Button bgmButton;
     [SerializeField] private Button exitButton;
+    [SerializeField] private Image muteIcon;
     private IEventBus eventBus;
     private IAudioService audioService;
+    private bool isMuted = false;
 
     void Awake()
     {
@@ -17,7 +19,19 @@ public class MainMenuPanel : MonoBehaviour
         bgmButton.onClick.AddListener(OnBGMButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
     }
-
+    void Start()
+    {
+        if (isMuted)
+        {
+            muteIcon.gameObject.SetActive(true);
+            audioService.SetBGMVolume(0);
+        }
+        else
+        {
+            muteIcon.gameObject.SetActive(false);
+            audioService.SetBGMVolume(1);
+        }
+    }
     void OnPlayButtonClicked()
     {
         audioService.PlaySFX(SoundType.click);
@@ -26,8 +40,18 @@ public class MainMenuPanel : MonoBehaviour
     void OnBGMButtonClicked()
     {
         audioService.PlaySFX(SoundType.click);
-        // Here i just need to mute and un-mute the audio source and also , just need to 
-        // toggle the music icon 
+        if (isMuted)
+        {
+            muteIcon.gameObject.SetActive(false);
+            audioService.SetBGMVolume(1);
+            isMuted = false;
+        }
+        else
+        {
+            muteIcon.gameObject.SetActive(true);
+            audioService.SetBGMVolume(0);
+            isMuted = true;
+        }
     }
     void OnExitButtonClicked()
     {

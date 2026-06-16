@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 87225a700e19d400482d408308ce29fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8112821591045307538
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_0
+  - first:
+      213: 8105504786799753265
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_1
+  - first:
+      213: 8343338796796505134
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_2
+  - first:
+      213: 6591188385558420252
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_3
+  - first:
+      213: 2919885188007020886
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_4
+  - first:
+      213: 6027987845983106542
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_5
+  - first:
+      213: -8959004107613450241
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_6
+  - first:
+      213: 2535508639824905703
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_7
+  - first:
+      213: 1991986270113643318
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_8
+  - first:
+      213: -7349856951597456996
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_9
+  - first:
+      213: 3160241726852228091
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_10
+  - first:
+      213: 2859674036165072673
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_11
+  - first:
+      213: 3641627888508064724
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_12
+  - first:
+      213: -4132069226437163324
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_13
+  - first:
+      213: 3892323614968334888
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_14
+  - first:
+      213: 7030836681353365457
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_15
+  - first:
+      213: 1233963612557334849
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_16
+  - first:
+      213: -218641794315202899
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_17
+  - first:
+      213: -4635910587116224324
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_18
+  - first:
+      213: 4278536523068843339
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_19
+  - first:
+      213: -6501747093867449060
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_20
+  - first:
+      213: 1471744275796796622
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_21
+  - first:
+      213: 5695402529058800057
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_22
+  - first:
+      213: -5171509462218818270
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_23
+  - first:
+      213: 1767902760939782294
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_24
+  - first:
+      213: 8454221059855018155
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_25
+  - first:
+      213: 8747041745977446792
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_26
+  - first:
+      213: 9168255083782782727
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_27
+  - first:
+      213: -1404566625586782501
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_28
+  - first:
+      213: -3568905324113959905
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_29
+  - first:
+      213: -1977779849359278824
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_30
+  - first:
+      213: -4573827653728954583
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_31
+  - first:
+      213: 6791893416674050123
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_32
+  - first:
+      213: 3014351699454174836
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_33
+  - first:
+      213: -7429288151596301846
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_34
+  - first:
+      213: -1364090502566412439
+    second: sprite-max-px-frames-36-rows-6-cols-6 (11)_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bin Open and tilt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab3bcaeac82a416190eef1b3ff43ae2
+      internalID: -175731759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be80f5cbabca24496ad1492bc80eb6c7
+      internalID: 668504711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0463a516bf9bb41b68d30f9d511eed89
+      internalID: 155037360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_3
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b31ce30290fe46459eab3eee014033a
+      internalID: -1138656848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_4
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7733862ae500c4bdc8824f674219d0c5
+      internalID: -2027723107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_5
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 4203
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ba11fe667804969b0017b01a7c3373
+      internalID: -955687609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2735b66d833674e9aac15f4966b1224e
+      internalID: -12960506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_7
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654417a2a6fe54b49b89eb4572f566a5
+      internalID: 1137636830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_8
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65df0f486abb3404a8c47d65256d4075
+      internalID: -80743752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_9
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2ade0ff95de4378be6ea97eda60585
+      internalID: 683961054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9d52daeebc3410190be60d85520f4e
+      internalID: -1511873639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_11
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 3395
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041dc7bf702f84267a6ec312ec3f9ece
+      internalID: -595355070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc0cfda946f4d6b8d5532700796b90
+      internalID: -1559426115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8f5d94bf36240b48c6431cbc3b40b2
+      internalID: 895842444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_14
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aeedf0fe9f404d05b1102275b48ec0e
+      internalID: 1975857342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_15
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114620163e46240f8b5bfe90847bcad1
+      internalID: 1119998158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_16
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f72bcb393ad43da8847168e61c64c2
+      internalID: 1793729584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_17
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2587
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b004ee71686a741fb9574660fbf1eec1
+      internalID: 884477097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068b4aedca77c41ac8cccf217c4c7ce8
+      internalID: 743534807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_19
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb1cd83f9c8747119bced10b61d206a
+      internalID: 1813761264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_20
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a787bd936aabd4a8e9844472a32c4fbc
+      internalID: 312519272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_21
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c579e75bf0e49f1bb0376696f48f79
+      internalID: -208117503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_22
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e83459573c674ac4827cdd6c91b1ba7
+      internalID: 2024696511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_23
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 1779
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b027ef40706154b81967e844928e62a6
+      internalID: 2002272524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d50d4f3997c347d28bca9e9b9462af9
+      internalID: -1077465203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_25
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6291e839d294493a794f231634a8a5
+      internalID: 1991431423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_26
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6ce5d1b7664c48af518a930939ce2
+      internalID: -1397608905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_27
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfbae40b7a484ed4bca1c6d7ec47800
+      internalID: -1078493282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_28
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ae6c7ed45094fc2bbc4cbd73c4729b
+      internalID: -384653138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_29
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 971
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e9a2d7737b4445e950e370113bcf4b
+      internalID: -219103764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0997c6bb7394286a08f114f2a6ceee
+      internalID: -528213422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_31
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c87b19711cb449093cdc6617a50547
+      internalID: 1785934222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_32
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e806ad64070b47738ef3796a31b94dd
+      internalID: 1161348877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_33
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d206193744441dd91c7f4ef336dee6
+      internalID: 448880580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_34
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1815cbd3c528e412387c332396c028e2
+      internalID: 1352150511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bin Open and tilt_35
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 163
+        width: 376
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2117b7044c8b4f79ae7bda3f50ac896
+      internalID: -933557167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5cbb9c74672ab4f2f938d21079e1bcd6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":376.0,"y":808.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bin Open and tilt_0: -175731759
+      Bin Open and tilt_1: 668504711
+      Bin Open and tilt_10: -1511873639
+      Bin Open and tilt_11: -595355070
+      Bin Open and tilt_12: -1559426115
+      Bin Open and tilt_13: 895842444
+      Bin Open and tilt_14: 1975857342
+      Bin Open and tilt_15: 1119998158
+      Bin Open and tilt_16: 1793729584
+      Bin Open and tilt_17: 884477097
+      Bin Open and tilt_18: 743534807
+      Bin Open and tilt_19: 1813761264
+      Bin Open and tilt_2: 155037360
+      Bin Open and tilt_20: 312519272
+      Bin Open and tilt_21: -208117503
+      Bin Open and tilt_22: 2024696511
+      Bin Open and tilt_23: 2002272524
+      Bin Open and tilt_24: -1077465203
+      Bin Open and tilt_25: 1991431423
+      Bin Open and tilt_26: -1397608905
+      Bin Open and tilt_27: -1078493282
+      Bin Open and tilt_28: -384653138
+      Bin Open and tilt_29: -219103764
+      Bin Open and tilt_3: -1138656848
+      Bin Open and tilt_30: -528213422
+      Bin Open and tilt_31: 1785934222
+      Bin Open and tilt_32: 1161348877
+      Bin Open and tilt_33: 448880580
+      Bin Open and tilt_34: 1352150511
+      Bin Open and tilt_35: -933557167
+      Bin Open and tilt_4: -2027723107
+      Bin Open and tilt_5: -955687609
+      Bin Open and tilt_6: -12960506
+      Bin Open and tilt_7: 1137636830
+      Bin Open and tilt_8: -80743752
+      Bin Open and tilt_9: 683961054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
